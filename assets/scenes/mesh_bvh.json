@@ -1,0 +1,286 @@
+{
+  "name": "Mesh BVH",
+  "description": "~174k triangles (subdivided icosphere + 10 tori). Unrenderable in reasonable time without the BVH.",
+  "camera": {
+    "look_from": [
+      0,
+      4.5,
+      7.5
+    ],
+    "look_at": [
+      0,
+      0.8,
+      0
+    ],
+    "vfov": 40
+  },
+  "render": {
+    "width": 640,
+    "height": 400,
+    "spp": 64,
+    "max_depth": 8,
+    "integrator": "path",
+    "tone_map": "aces"
+  },
+  "background": {
+    "type": "gradient",
+    "top": [
+      0.55,
+      0.65,
+      0.85
+    ],
+    "bottom": [
+      1,
+      0.97,
+      0.92
+    ],
+    "intensity": 1.0
+  },
+  "materials": {
+    "floor": {
+      "type": "lambertian",
+      "albedo": [
+        0.75,
+        0.75,
+        0.75
+      ]
+    },
+    "gold": {
+      "type": "metal",
+      "albedo": [
+        0.95,
+        0.75,
+        0.35
+      ],
+      "roughness": 0.15
+    },
+    "tint": {
+      "type": "lambertian",
+      "albedo": [
+        0.2,
+        0.45,
+        0.8
+      ]
+    },
+    "glass": {
+      "type": "dielectric",
+      "ior": 1.5,
+      "tint": [
+        0.9,
+        1.0,
+        0.92
+      ]
+    }
+  },
+  "objects": [
+    {
+      "type": "plane",
+      "name": "floor",
+      "point": [
+        0,
+        0,
+        0
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "material": "floor"
+    },
+    {
+      "type": "mesh",
+      "name": "icosphere",
+      "source": "icosphere",
+      "subdivisions": 6,
+      "smooth": true,
+      "scale": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "translate": [
+        0,
+        1.2,
+        0
+      ],
+      "material": "gold"
+    },
+    {
+      "type": "mesh",
+      "name": "torus 0",
+      "source": "torus",
+      "major_radius": 0.45,
+      "minor_radius": 0.15,
+      "segments": 96,
+      "smooth": true,
+      "rotate_y": 0.0,
+      "translate": [
+        3.0,
+        0.15,
+        0.0
+      ],
+      "material": "glass"
+    },
+    {
+      "type": "mesh",
+      "name": "torus 1",
+      "source": "torus",
+      "major_radius": 0.45,
+      "minor_radius": 0.15,
+      "segments": 96,
+      "smooth": true,
+      "rotate_y": 36.0,
+      "translate": [
+        2.4271,
+        0.15,
+        1.7634
+      ],
+      "material": "tint"
+    },
+    {
+      "type": "mesh",
+      "name": "torus 2",
+      "source": "torus",
+      "major_radius": 0.45,
+      "minor_radius": 0.15,
+      "segments": 96,
+      "smooth": true,
+      "rotate_y": 72.0,
+      "translate": [
+        0.9271,
+        0.15,
+        2.8532
+      ],
+      "material": "glass"
+    },
+    {
+      "type": "mesh",
+      "name": "torus 3",
+      "source": "torus",
+      "major_radius": 0.45,
+      "minor_radius": 0.15,
+      "segments": 96,
+      "smooth": true,
+      "rotate_y": 108.0,
+      "translate": [
+        -0.9271,
+        0.15,
+        2.8532
+      ],
+      "material": "tint"
+    },
+    {
+      "type": "mesh",
+      "name": "torus 4",
+      "source": "torus",
+      "major_radius": 0.45,
+      "minor_radius": 0.15,
+      "segments": 96,
+      "smooth": true,
+      "rotate_y": 144.0,
+      "translate": [
+        -2.4271,
+        0.15,
+        1.7634
+      ],
+      "material": "glass"
+    },
+    {
+      "type": "mesh",
+      "name": "torus 5",
+      "source": "torus",
+      "major_radius": 0.45,
+      "minor_radius": 0.15,
+      "segments": 96,
+      "smooth": true,
+      "rotate_y": 180.0,
+      "translate": [
+        -3.0,
+        0.15,
+        0.0
+      ],
+      "material": "tint"
+    },
+    {
+      "type": "mesh",
+      "name": "torus 6",
+      "source": "torus",
+      "major_radius": 0.45,
+      "minor_radius": 0.15,
+      "segments": 96,
+      "smooth": true,
+      "rotate_y": 216.0,
+      "translate": [
+        -2.4271,
+        0.15,
+        -1.7634
+      ],
+      "material": "glass"
+    },
+    {
+      "type": "mesh",
+      "name": "torus 7",
+      "source": "torus",
+      "major_radius": 0.45,
+      "minor_radius": 0.15,
+      "segments": 96,
+      "smooth": true,
+      "rotate_y": 252.0,
+      "translate": [
+        -0.9271,
+        0.15,
+        -2.8532
+      ],
+      "material": "tint"
+    },
+    {
+      "type": "mesh",
+      "name": "torus 8",
+      "source": "torus",
+      "major_radius": 0.45,
+      "minor_radius": 0.15,
+      "segments": 96,
+      "smooth": true,
+      "rotate_y": 288.0,
+      "translate": [
+        0.9271,
+        0.15,
+        -2.8532
+      ],
+      "material": "glass"
+    },
+    {
+      "type": "mesh",
+      "name": "torus 9",
+      "source": "torus",
+      "major_radius": 0.45,
+      "minor_radius": 0.15,
+      "segments": 96,
+      "smooth": true,
+      "rotate_y": 324.0,
+      "translate": [
+        2.4271,
+        0.15,
+        -1.7634
+      ],
+      "material": "tint"
+    }
+  ],
+  "lights": [
+    {
+      "type": "point",
+      "name": "sun-ish",
+      "position": [
+        6,
+        10,
+        4
+      ],
+      "intensity": [
+        120,
+        115,
+        105
+      ]
+    }
+  ]
+}

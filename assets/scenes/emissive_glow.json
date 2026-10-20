@@ -1,0 +1,25 @@
+{
+  "name": "Emissive glow",
+  "description": "A dark room lit only by glowing objects; their colours bleed onto nearby diffuse surfaces through indirect bounces.",
+  "camera": { "look_from": [0, 2.0, 5.5], "look_at": [0, 0.7, 0], "vfov": 45 },
+  "render": { "width": 720, "height": 405, "spp": 512, "max_depth": 10, "integrator": "path", "tone_map": "aces", "exposure": 1.4 },
+  "background": { "type": "solid", "color": [0, 0, 0] },
+  "materials": {
+    "floor": { "type": "lambertian", "albedo": [0.75, 0.75, 0.75] },
+    "wall":  { "type": "lambertian", "albedo": [0.8, 0.8, 0.8] },
+    "white": { "type": "lambertian", "albedo": [0.85, 0.85, 0.85] },
+    "glass": { "type": "dielectric", "ior": 1.5 },
+    "warm":  { "type": "emissive", "color": [1.0, 0.45, 0.12], "intensity": 6 },
+    "cool":  { "type": "emissive", "color": [0.15, 0.5, 1.0], "intensity": 6 },
+    "green": { "type": "emissive", "color": [0.3, 1.0, 0.35], "intensity": 4 }
+  },
+  "objects": [
+    { "type": "plane", "name": "floor", "point": [0, 0, 0], "normal": [0, 1, 0], "material": "floor" },
+    { "type": "quad", "name": "back wall", "corner": [-5, 0, -1.5], "u": [10, 0, 0], "v": [0, 5, 0], "material": "wall" },
+    { "type": "sphere", "name": "warm orb", "center": [-1.6, 0.45, 0.2], "radius": 0.45, "material": "warm" },
+    { "type": "sphere", "name": "cool orb", "center": [1.6, 0.45, 0.2], "radius": 0.45, "material": "cool" },
+    { "type": "box", "name": "white pillar", "min": [-0.4, 0, -0.6], "max": [0.4, 1.8, 0.2], "rotate_y": 0, "material": "white" },
+    { "type": "sphere", "name": "glass ball", "center": [0, 0.35, 1.2], "radius": 0.35, "material": "glass" },
+    { "type": "quad", "name": "green strip", "corner": [-1.0, 2.4, -1.45], "u": [2.0, 0, 0], "v": [0, 0.15, 0], "material": "green" }
+  ]
+}

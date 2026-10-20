@@ -1,0 +1,24 @@
+{
+  "name": "Material comparison",
+  "description": "Left to right: diffuse, glass (IOR 1.5), glass (IOR 2.4, diamond-like), polished metal, rough metal. Under an open sky with a sun-like point light.",
+  "camera": { "look_from": [0, 1.6, 6.5], "look_at": [0, 0.6, 0], "vfov": 38 },
+  "render": { "width": 800, "height": 400, "spp": 256, "max_depth": 16, "integrator": "path", "tone_map": "aces", "exposure": 1.1 },
+  "background": { "type": "gradient", "top": [0.45, 0.62, 0.95], "bottom": [1.0, 0.98, 0.95] },
+  "materials": {
+    "floor":   { "type": "lambertian", "albedo": [0.85, 0.85, 0.85], "albedo2": [0.2, 0.22, 0.25], "checker_scale": 1.5 },
+    "diffuse": { "type": "lambertian", "albedo": [0.75, 0.25, 0.2] },
+    "glass":   { "type": "dielectric", "ior": 1.5 },
+    "diamond": { "type": "dielectric", "ior": 2.4, "tint": [0.92, 0.97, 1.0] },
+    "mirror":  { "type": "metal", "albedo": [0.92, 0.92, 0.92], "roughness": 0.0 },
+    "brushed": { "type": "metal", "albedo": [0.95, 0.7, 0.45], "roughness": 0.35 }
+  },
+  "objects": [
+    { "type": "plane", "name": "floor", "point": [0, 0, 0], "normal": [0, 1, 0], "material": "floor" },
+    { "type": "sphere", "name": "diffuse", "center": [-2.6, 0.6, 0], "radius": 0.6, "material": "diffuse" },
+    { "type": "sphere", "name": "glass", "center": [-1.3, 0.6, 0], "radius": 0.6, "material": "glass" },
+    { "type": "sphere", "name": "diamond", "center": [0, 0.6, 0], "radius": 0.6, "material": "diamond" },
+    { "type": "sphere", "name": "mirror", "center": [1.3, 0.6, 0], "radius": 0.6, "material": "mirror" },
+    { "type": "sphere", "name": "rough metal", "center": [2.6, 0.6, 0], "radius": 0.6, "material": "brushed" }
+  ],
+  "lights": [ { "type": "point", "name": "sun", "position": [-4, 8, 6], "intensity": [90, 86, 80] } ]
+}

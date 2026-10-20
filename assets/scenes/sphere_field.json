@@ -1,0 +1,9008 @@
+{
+  "name": "Sphere field",
+  "description": "~480 spheres with mixed materials under a sky. Used for multithreading benchmarks.",
+  "camera": {
+    "look_from": [
+      13,
+      2,
+      3
+    ],
+    "look_at": [
+      0,
+      0,
+      0
+    ],
+    "vfov": 20,
+    "aperture": 0.08,
+    "focus_dist": 10
+  },
+  "render": {
+    "width": 800,
+    "height": 450,
+    "spp": 128,
+    "max_depth": 12,
+    "integrator": "path",
+    "tone_map": "aces",
+    "exposure": 1.2
+  },
+  "background": {
+    "type": "gradient",
+    "top": [
+      0.5,
+      0.7,
+      1.0
+    ],
+    "bottom": [
+      1,
+      1,
+      1
+    ]
+  },
+  "materials": {
+    "ground": {
+      "type": "lambertian",
+      "albedo": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "albedo2": [
+        0.32,
+        0.36,
+        0.3
+      ],
+      "checker_scale": 0.5
+    },
+    "glass": {
+      "type": "dielectric",
+      "ior": 1.5
+    },
+    "big_diffuse": {
+      "type": "lambertian",
+      "albedo": [
+        0.4,
+        0.2,
+        0.1
+      ]
+    },
+    "big_metal": {
+      "type": "metal",
+      "albedo": [
+        0.7,
+        0.6,
+        0.5
+      ],
+      "roughness": 0.0
+    },
+    "m0": {
+      "type": "lambertian",
+      "albedo": [
+        0.039,
+        0.021,
+        0.019
+      ]
+    },
+    "m1": {
+      "type": "lambertian",
+      "albedo": [
+        0.351,
+        0.028,
+        0.595
+      ]
+    },
+    "m2": {
+      "type": "lambertian",
+      "albedo": [
+        0.04,
+        0.042,
+        0.036
+      ]
+    },
+    "m3": {
+      "type": "metal",
+      "albedo": [
+        0.819,
+        0.686,
+        0.774
+      ],
+      "roughness": 0.025
+    },
+    "m4": {
+      "type": "lambertian",
+      "albedo": [
+        0.134,
+        0.265,
+        0.238
+      ]
+    },
+    "m5": {
+      "type": "lambertian",
+      "albedo": [
+        0.46,
+        0.21,
+        0.116
+      ]
+    },
+    "m6": {
+      "type": "lambertian",
+      "albedo": [
+        0.019,
+        0.511,
+        0.502
+      ]
+    },
+    "m7": {
+      "type": "lambertian",
+      "albedo": [
+        0.265,
+        0.794,
+        0.315
+      ]
+    },
+    "m8": {
+      "type": "lambertian",
+      "albedo": [
+        0.816,
+        0.11,
+        0.015
+      ]
+    },
+    "m9": {
+      "type": "lambertian",
+      "albedo": [
+        0.045,
+        0.032,
+        0.341
+      ]
+    },
+    "m10": {
+      "type": "lambertian",
+      "albedo": [
+        0.724,
+        0.241,
+        0.149
+      ]
+    },
+    "m11": {
+      "type": "metal",
+      "albedo": [
+        0.588,
+        0.616,
+        0.617
+      ],
+      "roughness": 0.194
+    },
+    "m12": {
+      "type": "lambertian",
+      "albedo": [
+        0.155,
+        0.54,
+        0.356
+      ]
+    },
+    "m13": {
+      "type": "lambertian",
+      "albedo": [
+        0.702,
+        0.698,
+        0.157
+      ]
+    },
+    "m14": {
+      "type": "lambertian",
+      "albedo": [
+        0.014,
+        0.055,
+        0.0
+      ]
+    },
+    "m15": {
+      "type": "lambertian",
+      "albedo": [
+        0.022,
+        0.091,
+        0.088
+      ]
+    },
+    "m16": {
+      "type": "lambertian",
+      "albedo": [
+        0.463,
+        0.042,
+        0.035
+      ]
+    },
+    "m17": {
+      "type": "lambertian",
+      "albedo": [
+        0.022,
+        0.077,
+        0.015
+      ]
+    },
+    "m18": {
+      "type": "lambertian",
+      "albedo": [
+        0.182,
+        0.061,
+        0.411
+      ]
+    },
+    "m19": {
+      "type": "metal",
+      "albedo": [
+        0.906,
+        0.992,
+        0.926
+      ],
+      "roughness": 0.322
+    },
+    "m20": {
+      "type": "metal",
+      "albedo": [
+        0.759,
+        0.678,
+        0.514
+      ],
+      "roughness": 0.011
+    },
+    "m21": {
+      "type": "lambertian",
+      "albedo": [
+        0.428,
+        0.926,
+        0.348
+      ]
+    },
+    "m22": {
+      "type": "lambertian",
+      "albedo": [
+        0.128,
+        0.757,
+        0.313
+      ]
+    },
+    "m23": {
+      "type": "metal",
+      "albedo": [
+        0.955,
+        0.891,
+        0.875
+      ],
+      "roughness": 0.191
+    },
+    "m24": {
+      "type": "lambertian",
+      "albedo": [
+        0.778,
+        0.159,
+        0.686
+      ]
+    },
+    "m25": {
+      "type": "lambertian",
+      "albedo": [
+        0.73,
+        0.121,
+        0.644
+      ]
+    },
+    "m26": {
+      "type": "lambertian",
+      "albedo": [
+        0.014,
+        0.342,
+        0.405
+      ]
+    },
+    "m27": {
+      "type": "metal",
+      "albedo": [
+        0.626,
+        0.646,
+        0.62
+      ],
+      "roughness": 0.235
+    },
+    "m28": {
+      "type": "lambertian",
+      "albedo": [
+        0.322,
+        0.267,
+        0.38
+      ]
+    },
+    "m29": {
+      "type": "metal",
+      "albedo": [
+        0.762,
+        0.509,
+        0.72
+      ],
+      "roughness": 0.073
+    },
+    "m30": {
+      "type": "lambertian",
+      "albedo": [
+        0.343,
+        0.181,
+        0.288
+      ]
+    },
+    "m31": {
+      "type": "metal",
+      "albedo": [
+        0.624,
+        0.638,
+        0.886
+      ],
+      "roughness": 0.203
+    },
+    "m32": {
+      "type": "lambertian",
+      "albedo": [
+        0.272,
+        0.259,
+        0.313
+      ]
+    },
+    "m33": {
+      "type": "lambertian",
+      "albedo": [
+        0.613,
+        0.245,
+        0.528
+      ]
+    },
+    "m34": {
+      "type": "metal",
+      "albedo": [
+        0.721,
+        0.536,
+        0.62
+      ],
+      "roughness": 0.029
+    },
+    "m35": {
+      "type": "lambertian",
+      "albedo": [
+        0.111,
+        0.094,
+        0.854
+      ]
+    },
+    "m36": {
+      "type": "lambertian",
+      "albedo": [
+        0.482,
+        0.134,
+        0.222
+      ]
+    },
+    "m37": {
+      "type": "lambertian",
+      "albedo": [
+        0.014,
+        0.244,
+        0.006
+      ]
+    },
+    "m38": {
+      "type": "lambertian",
+      "albedo": [
+        0.777,
+        0.102,
+        0.011
+      ]
+    },
+    "m39": {
+      "type": "metal",
+      "albedo": [
+        0.711,
+        0.956,
+        0.909
+      ],
+      "roughness": 0.103
+    },
+    "m40": {
+      "type": "lambertian",
+      "albedo": [
+        0.063,
+        0.04,
+        0.031
+      ]
+    },
+    "m42": {
+      "type": "lambertian",
+      "albedo": [
+        0.392,
+        0.188,
+        0.248
+      ]
+    },
+    "m43": {
+      "type": "lambertian",
+      "albedo": [
+        0.018,
+        0.01,
+        0.095
+      ]
+    },
+    "m44": {
+      "type": "metal",
+      "albedo": [
+        0.589,
+        0.674,
+        0.509
+      ],
+      "roughness": 0.1
+    },
+    "m45": {
+      "type": "lambertian",
+      "albedo": [
+        0.09,
+        0.099,
+        0.354
+      ]
+    },
+    "m46": {
+      "type": "lambertian",
+      "albedo": [
+        0.348,
+        0.337,
+        0.588
+      ]
+    },
+    "m47": {
+      "type": "lambertian",
+      "albedo": [
+        0.007,
+        0.052,
+        0.042
+      ]
+    },
+    "m48": {
+      "type": "lambertian",
+      "albedo": [
+        0.189,
+        0.071,
+        0.072
+      ]
+    },
+    "m49": {
+      "type": "lambertian",
+      "albedo": [
+        0.532,
+        0.236,
+        0.11
+      ]
+    },
+    "m50": {
+      "type": "lambertian",
+      "albedo": [
+        0.101,
+        0.002,
+        0.024
+      ]
+    },
+    "m51": {
+      "type": "lambertian",
+      "albedo": [
+        0.071,
+        0.31,
+        0.494
+      ]
+    },
+    "m52": {
+      "type": "lambertian",
+      "albedo": [
+        0.321,
+        0.108,
+        0.028
+      ]
+    },
+    "m53": {
+      "type": "metal",
+      "albedo": [
+        0.867,
+        0.906,
+        0.57
+      ],
+      "roughness": 0.21
+    },
+    "m54": {
+      "type": "lambertian",
+      "albedo": [
+        0.483,
+        0.61,
+        0.159
+      ]
+    },
+    "m55": {
+      "type": "lambertian",
+      "albedo": [
+        0.088,
+        0.351,
+        0.426
+      ]
+    },
+    "m56": {
+      "type": "lambertian",
+      "albedo": [
+        0.376,
+        0.353,
+        0.049
+      ]
+    },
+    "m57": {
+      "type": "lambertian",
+      "albedo": [
+        0.15,
+        0.722,
+        0.189
+      ]
+    },
+    "m58": {
+      "type": "lambertian",
+      "albedo": [
+        0.397,
+        0.011,
+        0.189
+      ]
+    },
+    "m59": {
+      "type": "lambertian",
+      "albedo": [
+        0.016,
+        0.465,
+        0.197
+      ]
+    },
+    "m60": {
+      "type": "lambertian",
+      "albedo": [
+        0.106,
+        0.195,
+        0.016
+      ]
+    },
+    "m61": {
+      "type": "lambertian",
+      "albedo": [
+        0.121,
+        0.198,
+        0.123
+      ]
+    },
+    "m62": {
+      "type": "lambertian",
+      "albedo": [
+        0.109,
+        0.451,
+        0.163
+      ]
+    },
+    "m63": {
+      "type": "metal",
+      "albedo": [
+        0.502,
+        0.746,
+        0.725
+      ],
+      "roughness": 0.121
+    },
+    "m64": {
+      "type": "lambertian",
+      "albedo": [
+        0.001,
+        0.63,
+        0.111
+      ]
+    },
+    "m65": {
+      "type": "lambertian",
+      "albedo": [
+        0.146,
+        0.588,
+        0.154
+      ]
+    },
+    "m66": {
+      "type": "lambertian",
+      "albedo": [
+        0.238,
+        0.233,
+        0.136
+      ]
+    },
+    "m67": {
+      "type": "lambertian",
+      "albedo": [
+        0.718,
+        0.576,
+        0.517
+      ]
+    },
+    "m68": {
+      "type": "lambertian",
+      "albedo": [
+        0.339,
+        0.184,
+        0.045
+      ]
+    },
+    "m69": {
+      "type": "lambertian",
+      "albedo": [
+        0.22,
+        0.254,
+        0.197
+      ]
+    },
+    "m70": {
+      "type": "lambertian",
+      "albedo": [
+        0.034,
+        0.45,
+        0.199
+      ]
+    },
+    "m72": {
+      "type": "lambertian",
+      "albedo": [
+        0.022,
+        0.147,
+        0.665
+      ]
+    },
+    "m73": {
+      "type": "lambertian",
+      "albedo": [
+        0.127,
+        0.017,
+        0.122
+      ]
+    },
+    "m74": {
+      "type": "lambertian",
+      "albedo": [
+        0.059,
+        0.099,
+        0.425
+      ]
+    },
+    "m75": {
+      "type": "metal",
+      "albedo": [
+        0.516,
+        0.855,
+        0.948
+      ],
+      "roughness": 0.189
+    },
+    "m76": {
+      "type": "lambertian",
+      "albedo": [
+        0.765,
+        0.832,
+        0.027
+      ]
+    },
+    "m77": {
+      "type": "lambertian",
+      "albedo": [
+        0.68,
+        0.495,
+        0.252
+      ]
+    },
+    "m78": {
+      "type": "lambertian",
+      "albedo": [
+        0.594,
+        0.039,
+        0.16
+      ]
+    },
+    "m79": {
+      "type": "lambertian",
+      "albedo": [
+        0.306,
+        0.087,
+        0.006
+      ]
+    },
+    "m80": {
+      "type": "lambertian",
+      "albedo": [
+        0.57,
+        0.112,
+        0.237
+      ]
+    },
+    "m81": {
+      "type": "lambertian",
+      "albedo": [
+        0.336,
+        0.108,
+        0.617
+      ]
+    },
+    "m82": {
+      "type": "lambertian",
+      "albedo": [
+        0.287,
+        0.158,
+        0.373
+      ]
+    },
+    "m83": {
+      "type": "lambertian",
+      "albedo": [
+        0.189,
+        0.168,
+        0.281
+      ]
+    },
+    "m84": {
+      "type": "lambertian",
+      "albedo": [
+        0.277,
+        0.139,
+        0.084
+      ]
+    },
+    "m86": {
+      "type": "lambertian",
+      "albedo": [
+        0.647,
+        0.929,
+        0.061
+      ]
+    },
+    "m88": {
+      "type": "lambertian",
+      "albedo": [
+        0.056,
+        0.001,
+        0.336
+      ]
+    },
+    "m89": {
+      "type": "lambertian",
+      "albedo": [
+        0.293,
+        0.355,
+        0.023
+      ]
+    },
+    "m90": {
+      "type": "lambertian",
+      "albedo": [
+        0.327,
+        0.012,
+        0.622
+      ]
+    },
+    "m91": {
+      "type": "lambertian",
+      "albedo": [
+        0.236,
+        0.671,
+        0.092
+      ]
+    },
+    "m93": {
+      "type": "lambertian",
+      "albedo": [
+        0.003,
+        0.581,
+        0.023
+      ]
+    },
+    "m94": {
+      "type": "lambertian",
+      "albedo": [
+        0.369,
+        0.108,
+        0.458
+      ]
+    },
+    "m95": {
+      "type": "lambertian",
+      "albedo": [
+        0.636,
+        0.199,
+        0.116
+      ]
+    },
+    "m96": {
+      "type": "metal",
+      "albedo": [
+        0.876,
+        0.624,
+        0.532
+      ],
+      "roughness": 0.014
+    },
+    "m97": {
+      "type": "lambertian",
+      "albedo": [
+        0.873,
+        0.022,
+        0.048
+      ]
+    },
+    "m98": {
+      "type": "lambertian",
+      "albedo": [
+        0.259,
+        0.504,
+        0.563
+      ]
+    },
+    "m99": {
+      "type": "lambertian",
+      "albedo": [
+        0.211,
+        0.147,
+        0.061
+      ]
+    },
+    "m100": {
+      "type": "lambertian",
+      "albedo": [
+        0.129,
+        0.503,
+        0.187
+      ]
+    },
+    "m101": {
+      "type": "lambertian",
+      "albedo": [
+        0.389,
+        0.769,
+        0.012
+      ]
+    },
+    "m102": {
+      "type": "lambertian",
+      "albedo": [
+        0.542,
+        0.322,
+        0.117
+      ]
+    },
+    "m103": {
+      "type": "metal",
+      "albedo": [
+        0.798,
+        0.81,
+        0.609
+      ],
+      "roughness": 0.147
+    },
+    "m104": {
+      "type": "lambertian",
+      "albedo": [
+        0.391,
+        0.002,
+        0.222
+      ]
+    },
+    "m105": {
+      "type": "lambertian",
+      "albedo": [
+        0.436,
+        0.006,
+        0.217
+      ]
+    },
+    "m106": {
+      "type": "lambertian",
+      "albedo": [
+        0.285,
+        0.087,
+        0.298
+      ]
+    },
+    "m107": {
+      "type": "lambertian",
+      "albedo": [
+        0.861,
+        0.072,
+        0.148
+      ]
+    },
+    "m108": {
+      "type": "lambertian",
+      "albedo": [
+        0.333,
+        0.407,
+        0.002
+      ]
+    },
+    "m109": {
+      "type": "lambertian",
+      "albedo": [
+        0.055,
+        0.187,
+        0.041
+      ]
+    },
+    "m110": {
+      "type": "lambertian",
+      "albedo": [
+        0.395,
+        0.191,
+        0.119
+      ]
+    },
+    "m113": {
+      "type": "lambertian",
+      "albedo": [
+        0.175,
+        0.342,
+        0.152
+      ]
+    },
+    "m114": {
+      "type": "lambertian",
+      "albedo": [
+        0.047,
+        0.179,
+        0.037
+      ]
+    },
+    "m115": {
+      "type": "lambertian",
+      "albedo": [
+        0.099,
+        0.33,
+        0.192
+      ]
+    },
+    "m116": {
+      "type": "lambertian",
+      "albedo": [
+        0.294,
+        0.01,
+        0.303
+      ]
+    },
+    "m117": {
+      "type": "lambertian",
+      "albedo": [
+        0.082,
+        0.051,
+        0.055
+      ]
+    },
+    "m118": {
+      "type": "lambertian",
+      "albedo": [
+        0.026,
+        0.06,
+        0.398
+      ]
+    },
+    "m119": {
+      "type": "lambertian",
+      "albedo": [
+        0.129,
+        0.854,
+        0.597
+      ]
+    },
+    "m120": {
+      "type": "lambertian",
+      "albedo": [
+        0.876,
+        0.13,
+        0.061
+      ]
+    },
+    "m121": {
+      "type": "lambertian",
+      "albedo": [
+        0.247,
+        0.117,
+        0.462
+      ]
+    },
+    "m122": {
+      "type": "lambertian",
+      "albedo": [
+        0.012,
+        0.029,
+        0.636
+      ]
+    },
+    "m123": {
+      "type": "metal",
+      "albedo": [
+        0.558,
+        0.765,
+        0.818
+      ],
+      "roughness": 0.144
+    },
+    "m124": {
+      "type": "metal",
+      "albedo": [
+        0.941,
+        0.552,
+        0.996
+      ],
+      "roughness": 0.252
+    },
+    "m125": {
+      "type": "lambertian",
+      "albedo": [
+        0.572,
+        0.275,
+        0.078
+      ]
+    },
+    "m126": {
+      "type": "lambertian",
+      "albedo": [
+        0.162,
+        0.577,
+        0.208
+      ]
+    },
+    "m127": {
+      "type": "lambertian",
+      "albedo": [
+        0.266,
+        0.459,
+        0.03
+      ]
+    },
+    "m128": {
+      "type": "lambertian",
+      "albedo": [
+        0.038,
+        0.08,
+        0.344
+      ]
+    },
+    "m129": {
+      "type": "lambertian",
+      "albedo": [
+        0.126,
+        0.036,
+        0.061
+      ]
+    },
+    "m130": {
+      "type": "metal",
+      "albedo": [
+        0.632,
+        0.506,
+        0.822
+      ],
+      "roughness": 0.225
+    },
+    "m131": {
+      "type": "lambertian",
+      "albedo": [
+        0.687,
+        0.225,
+        0.023
+      ]
+    },
+    "m132": {
+      "type": "lambertian",
+      "albedo": [
+        0.01,
+        0.518,
+        0.028
+      ]
+    },
+    "m133": {
+      "type": "lambertian",
+      "albedo": [
+        0.142,
+        0.093,
+        0.043
+      ]
+    },
+    "m134": {
+      "type": "metal",
+      "albedo": [
+        0.922,
+        0.873,
+        0.733
+      ],
+      "roughness": 0.297
+    },
+    "m135": {
+      "type": "lambertian",
+      "albedo": [
+        0.009,
+        0.252,
+        0.588
+      ]
+    },
+    "m136": {
+      "type": "lambertian",
+      "albedo": [
+        0.344,
+        0.139,
+        0.62
+      ]
+    },
+    "m137": {
+      "type": "lambertian",
+      "albedo": [
+        0.061,
+        0.703,
+        0.244
+      ]
+    },
+    "m138": {
+      "type": "metal",
+      "albedo": [
+        0.954,
+        0.815,
+        0.846
+      ],
+      "roughness": 0.266
+    },
+    "m140": {
+      "type": "lambertian",
+      "albedo": [
+        0.413,
+        0.065,
+        0.048
+      ]
+    },
+    "m141": {
+      "type": "metal",
+      "albedo": [
+        0.553,
+        0.964,
+        0.672
+      ],
+      "roughness": 0.057
+    },
+    "m142": {
+      "type": "lambertian",
+      "albedo": [
+        0.442,
+        0.048,
+        0.215
+      ]
+    },
+    "m143": {
+      "type": "lambertian",
+      "albedo": [
+        0.101,
+        0.023,
+        0.029
+      ]
+    },
+    "m144": {
+      "type": "metal",
+      "albedo": [
+        0.816,
+        0.644,
+        0.55
+      ],
+      "roughness": 0.039
+    },
+    "m145": {
+      "type": "metal",
+      "albedo": [
+        0.712,
+        0.51,
+        0.628
+      ],
+      "roughness": 0.113
+    },
+    "m146": {
+      "type": "lambertian",
+      "albedo": [
+        0.486,
+        0.526,
+        0.013
+      ]
+    },
+    "m147": {
+      "type": "lambertian",
+      "albedo": [
+        0.379,
+        0.187,
+        0.075
+      ]
+    },
+    "m148": {
+      "type": "lambertian",
+      "albedo": [
+        0.745,
+        0.002,
+        0.392
+      ]
+    },
+    "m149": {
+      "type": "lambertian",
+      "albedo": [
+        0.217,
+        0.268,
+        0.15
+      ]
+    },
+    "m150": {
+      "type": "lambertian",
+      "albedo": [
+        0.064,
+        0.549,
+        0.223
+      ]
+    },
+    "m151": {
+      "type": "lambertian",
+      "albedo": [
+        0.077,
+        0.005,
+        0.237
+      ]
+    },
+    "m152": {
+      "type": "lambertian",
+      "albedo": [
+        0.108,
+        0.401,
+        0.487
+      ]
+    },
+    "m153": {
+      "type": "lambertian",
+      "albedo": [
+        0.558,
+        0.126,
+        0.339
+      ]
+    },
+    "m154": {
+      "type": "lambertian",
+      "albedo": [
+        0.211,
+        0.058,
+        0.593
+      ]
+    },
+    "m155": {
+      "type": "lambertian",
+      "albedo": [
+        0.171,
+        0.053,
+        0.185
+      ]
+    },
+    "m156": {
+      "type": "lambertian",
+      "albedo": [
+        0.039,
+        0.782,
+        0.319
+      ]
+    },
+    "m157": {
+      "type": "lambertian",
+      "albedo": [
+        0.08,
+        0.014,
+        0.549
+      ]
+    },
+    "m158": {
+      "type": "lambertian",
+      "albedo": [
+        0.086,
+        0.3,
+        0.39
+      ]
+    },
+    "m159": {
+      "type": "lambertian",
+      "albedo": [
+        0.165,
+        0.681,
+        0.597
+      ]
+    },
+    "m160": {
+      "type": "lambertian",
+      "albedo": [
+        0.197,
+        0.041,
+        0.558
+      ]
+    },
+    "m161": {
+      "type": "lambertian",
+      "albedo": [
+        0.283,
+        0.276,
+        0.17
+      ]
+    },
+    "m162": {
+      "type": "lambertian",
+      "albedo": [
+        0.477,
+        0.021,
+        0.126
+      ]
+    },
+    "m164": {
+      "type": "lambertian",
+      "albedo": [
+        0.214,
+        0.199,
+        0.269
+      ]
+    },
+    "m165": {
+      "type": "metal",
+      "albedo": [
+        0.678,
+        0.528,
+        0.637
+      ],
+      "roughness": 0.16
+    },
+    "m166": {
+      "type": "lambertian",
+      "albedo": [
+        0.246,
+        0.06,
+        0.697
+      ]
+    },
+    "m167": {
+      "type": "lambertian",
+      "albedo": [
+        0.083,
+        0.1,
+        0.514
+      ]
+    },
+    "m168": {
+      "type": "lambertian",
+      "albedo": [
+        0.34,
+        0.523,
+        0.382
+      ]
+    },
+    "m169": {
+      "type": "lambertian",
+      "albedo": [
+        0.296,
+        0.227,
+        0.095
+      ]
+    },
+    "m170": {
+      "type": "lambertian",
+      "albedo": [
+        0.203,
+        0.074,
+        0.205
+      ]
+    },
+    "m171": {
+      "type": "lambertian",
+      "albedo": [
+        0.794,
+        0.047,
+        0.71
+      ]
+    },
+    "m172": {
+      "type": "lambertian",
+      "albedo": [
+        0.0,
+        0.624,
+        0.025
+      ]
+    },
+    "m173": {
+      "type": "lambertian",
+      "albedo": [
+        0.053,
+        0.716,
+        0.15
+      ]
+    },
+    "m174": {
+      "type": "lambertian",
+      "albedo": [
+        0.704,
+        0.166,
+        0.368
+      ]
+    },
+    "m175": {
+      "type": "lambertian",
+      "albedo": [
+        0.147,
+        0.033,
+        0.029
+      ]
+    },
+    "m176": {
+      "type": "lambertian",
+      "albedo": [
+        0.269,
+        0.006,
+        0.393
+      ]
+    },
+    "m177": {
+      "type": "lambertian",
+      "albedo": [
+        0.157,
+        0.072,
+        0.405
+      ]
+    },
+    "m178": {
+      "type": "lambertian",
+      "albedo": [
+        0.308,
+        0.501,
+        0.435
+      ]
+    },
+    "m179": {
+      "type": "lambertian",
+      "albedo": [
+        0.292,
+        0.174,
+        0.405
+      ]
+    },
+    "m180": {
+      "type": "lambertian",
+      "albedo": [
+        0.458,
+        0.242,
+        0.203
+      ]
+    },
+    "m181": {
+      "type": "lambertian",
+      "albedo": [
+        0.518,
+        0.105,
+        0.175
+      ]
+    },
+    "m182": {
+      "type": "lambertian",
+      "albedo": [
+        0.64,
+        0.027,
+        0.002
+      ]
+    },
+    "m183": {
+      "type": "lambertian",
+      "albedo": [
+        0.519,
+        0.557,
+        0.387
+      ]
+    },
+    "m184": {
+      "type": "lambertian",
+      "albedo": [
+        0.142,
+        0.349,
+        0.018
+      ]
+    },
+    "m185": {
+      "type": "lambertian",
+      "albedo": [
+        0.242,
+        0.647,
+        0.145
+      ]
+    },
+    "m186": {
+      "type": "lambertian",
+      "albedo": [
+        0.276,
+        0.051,
+        0.022
+      ]
+    },
+    "m187": {
+      "type": "lambertian",
+      "albedo": [
+        0.41,
+        0.005,
+        0.555
+      ]
+    },
+    "m189": {
+      "type": "lambertian",
+      "albedo": [
+        0.002,
+        0.003,
+        0.118
+      ]
+    },
+    "m190": {
+      "type": "lambertian",
+      "albedo": [
+        0.013,
+        0.178,
+        0.009
+      ]
+    },
+    "m191": {
+      "type": "metal",
+      "albedo": [
+        0.865,
+        0.542,
+        0.814
+      ],
+      "roughness": 0.284
+    },
+    "m192": {
+      "type": "lambertian",
+      "albedo": [
+        0.692,
+        0.0,
+        0.532
+      ]
+    },
+    "m193": {
+      "type": "lambertian",
+      "albedo": [
+        0.143,
+        0.029,
+        0.211
+      ]
+    },
+    "m194": {
+      "type": "lambertian",
+      "albedo": [
+        0.29,
+        0.406,
+        0.161
+      ]
+    },
+    "m195": {
+      "type": "metal",
+      "albedo": [
+        0.783,
+        0.646,
+        0.53
+      ],
+      "roughness": 0.39
+    },
+    "m196": {
+      "type": "lambertian",
+      "albedo": [
+        0.592,
+        0.5,
+        0.132
+      ]
+    },
+    "m197": {
+      "type": "metal",
+      "albedo": [
+        0.801,
+        0.948,
+        0.904
+      ],
+      "roughness": 0.113
+    },
+    "m198": {
+      "type": "lambertian",
+      "albedo": [
+        0.479,
+        0.038,
+        0.676
+      ]
+    },
+    "m199": {
+      "type": "metal",
+      "albedo": [
+        0.926,
+        0.904,
+        0.842
+      ],
+      "roughness": 0.365
+    },
+    "m200": {
+      "type": "lambertian",
+      "albedo": [
+        0.16,
+        0.699,
+        0.142
+      ]
+    },
+    "m201": {
+      "type": "lambertian",
+      "albedo": [
+        0.191,
+        0.364,
+        0.071
+      ]
+    },
+    "m202": {
+      "type": "metal",
+      "albedo": [
+        0.948,
+        0.943,
+        0.761
+      ],
+      "roughness": 0.191
+    },
+    "m203": {
+      "type": "lambertian",
+      "albedo": [
+        0.127,
+        0.205,
+        0.208
+      ]
+    },
+    "m204": {
+      "type": "lambertian",
+      "albedo": [
+        0.04,
+        0.498,
+        0.093
+      ]
+    },
+    "m205": {
+      "type": "lambertian",
+      "albedo": [
+        0.033,
+        0.421,
+        0.148
+      ]
+    },
+    "m206": {
+      "type": "metal",
+      "albedo": [
+        0.884,
+        0.909,
+        0.982
+      ],
+      "roughness": 0.102
+    },
+    "m207": {
+      "type": "lambertian",
+      "albedo": [
+        0.004,
+        0.485,
+        0.434
+      ]
+    },
+    "m208": {
+      "type": "metal",
+      "albedo": [
+        0.699,
+        0.56,
+        0.98
+      ],
+      "roughness": 0.103
+    },
+    "m209": {
+      "type": "lambertian",
+      "albedo": [
+        0.263,
+        0.072,
+        0.958
+      ]
+    },
+    "m210": {
+      "type": "lambertian",
+      "albedo": [
+        0.318,
+        0.757,
+        0.037
+      ]
+    },
+    "m211": {
+      "type": "lambertian",
+      "albedo": [
+        0.008,
+        0.709,
+        0.202
+      ]
+    },
+    "m212": {
+      "type": "lambertian",
+      "albedo": [
+        0.083,
+        0.06,
+        0.04
+      ]
+    },
+    "m213": {
+      "type": "lambertian",
+      "albedo": [
+        0.14,
+        0.033,
+        0.206
+      ]
+    },
+    "m214": {
+      "type": "metal",
+      "albedo": [
+        0.724,
+        0.548,
+        0.964
+      ],
+      "roughness": 0.337
+    },
+    "m215": {
+      "type": "lambertian",
+      "albedo": [
+        0.393,
+        0.09,
+        0.013
+      ]
+    },
+    "m216": {
+      "type": "lambertian",
+      "albedo": [
+        0.232,
+        0.064,
+        0.228
+      ]
+    },
+    "m217": {
+      "type": "lambertian",
+      "albedo": [
+        0.287,
+        0.112,
+        0.051
+      ]
+    },
+    "m218": {
+      "type": "lambertian",
+      "albedo": [
+        0.074,
+        0.073,
+        0.989
+      ]
+    },
+    "m220": {
+      "type": "metal",
+      "albedo": [
+        0.647,
+        0.989,
+        0.508
+      ],
+      "roughness": 0.323
+    },
+    "m221": {
+      "type": "lambertian",
+      "albedo": [
+        0.438,
+        0.081,
+        0.199
+      ]
+    },
+    "m222": {
+      "type": "lambertian",
+      "albedo": [
+        0.548,
+        0.016,
+        0.053
+      ]
+    },
+    "m223": {
+      "type": "lambertian",
+      "albedo": [
+        0.433,
+        0.473,
+        0.013
+      ]
+    },
+    "m224": {
+      "type": "lambertian",
+      "albedo": [
+        0.045,
+        0.282,
+        0.426
+      ]
+    },
+    "m225": {
+      "type": "lambertian",
+      "albedo": [
+        0.232,
+        0.155,
+        0.06
+      ]
+    },
+    "m226": {
+      "type": "lambertian",
+      "albedo": [
+        0.232,
+        0.062,
+        0.583
+      ]
+    },
+    "m227": {
+      "type": "metal",
+      "albedo": [
+        0.691,
+        0.876,
+        0.531
+      ],
+      "roughness": 0.349
+    },
+    "m229": {
+      "type": "lambertian",
+      "albedo": [
+        0.003,
+        0.136,
+        0.011
+      ]
+    },
+    "m230": {
+      "type": "lambertian",
+      "albedo": [
+        0.089,
+        0.032,
+        0.061
+      ]
+    },
+    "m231": {
+      "type": "lambertian",
+      "albedo": [
+        0.056,
+        0.51,
+        0.084
+      ]
+    },
+    "m232": {
+      "type": "lambertian",
+      "albedo": [
+        0.364,
+        0.353,
+        0.208
+      ]
+    },
+    "m234": {
+      "type": "lambertian",
+      "albedo": [
+        0.789,
+        0.744,
+        0.045
+      ]
+    },
+    "m235": {
+      "type": "lambertian",
+      "albedo": [
+        0.105,
+        0.231,
+        0.037
+      ]
+    },
+    "m236": {
+      "type": "lambertian",
+      "albedo": [
+        0.135,
+        0.728,
+        0.512
+      ]
+    },
+    "m237": {
+      "type": "metal",
+      "albedo": [
+        0.821,
+        0.633,
+        0.839
+      ],
+      "roughness": 0.109
+    },
+    "m238": {
+      "type": "lambertian",
+      "albedo": [
+        0.13,
+        0.412,
+        0.088
+      ]
+    },
+    "m239": {
+      "type": "lambertian",
+      "albedo": [
+        0.491,
+        0.125,
+        0.079
+      ]
+    },
+    "m240": {
+      "type": "lambertian",
+      "albedo": [
+        0.117,
+        0.021,
+        0.459
+      ]
+    },
+    "m241": {
+      "type": "lambertian",
+      "albedo": [
+        0.143,
+        0.253,
+        0.287
+      ]
+    },
+    "m242": {
+      "type": "lambertian",
+      "albedo": [
+        0.196,
+        0.007,
+        0.304
+      ]
+    },
+    "m243": {
+      "type": "lambertian",
+      "albedo": [
+        0.281,
+        0.228,
+        0.011
+      ]
+    },
+    "m244": {
+      "type": "metal",
+      "albedo": [
+        0.694,
+        0.72,
+        0.868
+      ],
+      "roughness": 0.044
+    },
+    "m245": {
+      "type": "lambertian",
+      "albedo": [
+        0.052,
+        0.238,
+        0.524
+      ]
+    },
+    "m246": {
+      "type": "metal",
+      "albedo": [
+        0.872,
+        0.88,
+        0.738
+      ],
+      "roughness": 0.314
+    },
+    "m247": {
+      "type": "lambertian",
+      "albedo": [
+        0.004,
+        0.449,
+        0.479
+      ]
+    },
+    "m248": {
+      "type": "lambertian",
+      "albedo": [
+        0.114,
+        0.214,
+        0.253
+      ]
+    },
+    "m249": {
+      "type": "metal",
+      "albedo": [
+        0.592,
+        0.652,
+        0.572
+      ],
+      "roughness": 0.23
+    },
+    "m250": {
+      "type": "lambertian",
+      "albedo": [
+        0.273,
+        0.804,
+        0.087
+      ]
+    },
+    "m251": {
+      "type": "metal",
+      "albedo": [
+        0.782,
+        0.749,
+        0.96
+      ],
+      "roughness": 0.309
+    },
+    "m252": {
+      "type": "lambertian",
+      "albedo": [
+        0.354,
+        0.139,
+        0.209
+      ]
+    },
+    "m254": {
+      "type": "lambertian",
+      "albedo": [
+        0.322,
+        0.849,
+        0.214
+      ]
+    },
+    "m255": {
+      "type": "lambertian",
+      "albedo": [
+        0.433,
+        0.054,
+        0.808
+      ]
+    },
+    "m256": {
+      "type": "lambertian",
+      "albedo": [
+        0.566,
+        0.879,
+        0.066
+      ]
+    },
+    "m257": {
+      "type": "lambertian",
+      "albedo": [
+        0.034,
+        0.38,
+        0.351
+      ]
+    },
+    "m258": {
+      "type": "lambertian",
+      "albedo": [
+        0.242,
+        0.003,
+        0.256
+      ]
+    },
+    "m259": {
+      "type": "lambertian",
+      "albedo": [
+        0.275,
+        0.172,
+        0.53
+      ]
+    },
+    "m260": {
+      "type": "lambertian",
+      "albedo": [
+        0.119,
+        0.011,
+        0.089
+      ]
+    },
+    "m261": {
+      "type": "metal",
+      "albedo": [
+        0.531,
+        0.506,
+        0.885
+      ],
+      "roughness": 0.129
+    },
+    "m262": {
+      "type": "lambertian",
+      "albedo": [
+        0.027,
+        0.526,
+        0.157
+      ]
+    },
+    "m263": {
+      "type": "lambertian",
+      "albedo": [
+        0.559,
+        0.273,
+        0.011
+      ]
+    },
+    "m265": {
+      "type": "metal",
+      "albedo": [
+        0.801,
+        0.98,
+        0.748
+      ],
+      "roughness": 0.38
+    },
+    "m266": {
+      "type": "lambertian",
+      "albedo": [
+        0.068,
+        0.424,
+        0.193
+      ]
+    },
+    "m267": {
+      "type": "lambertian",
+      "albedo": [
+        0.282,
+        0.065,
+        0.206
+      ]
+    },
+    "m268": {
+      "type": "lambertian",
+      "albedo": [
+        0.29,
+        0.047,
+        0.067
+      ]
+    },
+    "m269": {
+      "type": "lambertian",
+      "albedo": [
+        0.11,
+        0.025,
+        0.107
+      ]
+    },
+    "m270": {
+      "type": "lambertian",
+      "albedo": [
+        0.056,
+        0.272,
+        0.199
+      ]
+    },
+    "m272": {
+      "type": "lambertian",
+      "albedo": [
+        0.235,
+        0.216,
+        0.15
+      ]
+    },
+    "m273": {
+      "type": "lambertian",
+      "albedo": [
+        0.278,
+        0.209,
+        0.253
+      ]
+    },
+    "m274": {
+      "type": "lambertian",
+      "albedo": [
+        0.015,
+        0.273,
+        0.072
+      ]
+    },
+    "m275": {
+      "type": "lambertian",
+      "albedo": [
+        0.02,
+        0.07,
+        0.09
+      ]
+    },
+    "m276": {
+      "type": "lambertian",
+      "albedo": [
+        0.684,
+        0.114,
+        0.008
+      ]
+    },
+    "m277": {
+      "type": "lambertian",
+      "albedo": [
+        0.272,
+        0.174,
+        0.298
+      ]
+    },
+    "m278": {
+      "type": "lambertian",
+      "albedo": [
+        0.67,
+        0.029,
+        0.006
+      ]
+    },
+    "m279": {
+      "type": "lambertian",
+      "albedo": [
+        0.012,
+        0.115,
+        0.479
+      ]
+    },
+    "m280": {
+      "type": "lambertian",
+      "albedo": [
+        0.239,
+        0.001,
+        0.222
+      ]
+    },
+    "m281": {
+      "type": "lambertian",
+      "albedo": [
+        0.012,
+        0.088,
+        0.192
+      ]
+    },
+    "m282": {
+      "type": "lambertian",
+      "albedo": [
+        0.294,
+        0.233,
+        0.085
+      ]
+    },
+    "m283": {
+      "type": "lambertian",
+      "albedo": [
+        0.613,
+        0.284,
+        0.038
+      ]
+    },
+    "m284": {
+      "type": "lambertian",
+      "albedo": [
+        0.097,
+        0.031,
+        0.21
+      ]
+    },
+    "m285": {
+      "type": "lambertian",
+      "albedo": [
+        0.136,
+        0.021,
+        0.083
+      ]
+    },
+    "m286": {
+      "type": "lambertian",
+      "albedo": [
+        0.159,
+        0.125,
+        0.416
+      ]
+    },
+    "m287": {
+      "type": "lambertian",
+      "albedo": [
+        0.08,
+        0.272,
+        0.417
+      ]
+    },
+    "m288": {
+      "type": "lambertian",
+      "albedo": [
+        0.353,
+        0.095,
+        0.104
+      ]
+    },
+    "m289": {
+      "type": "lambertian",
+      "albedo": [
+        0.138,
+        0.051,
+        0.152
+      ]
+    },
+    "m290": {
+      "type": "lambertian",
+      "albedo": [
+        0.011,
+        0.063,
+        0.703
+      ]
+    },
+    "m291": {
+      "type": "lambertian",
+      "albedo": [
+        0.082,
+        0.005,
+        0.593
+      ]
+    },
+    "m292": {
+      "type": "lambertian",
+      "albedo": [
+        0.062,
+        0.004,
+        0.65
+      ]
+    },
+    "m293": {
+      "type": "lambertian",
+      "albedo": [
+        0.784,
+        0.132,
+        0.616
+      ]
+    },
+    "m294": {
+      "type": "lambertian",
+      "albedo": [
+        0.118,
+        0.204,
+        0.199
+      ]
+    },
+    "m295": {
+      "type": "lambertian",
+      "albedo": [
+        0.578,
+        0.855,
+        0.247
+      ]
+    },
+    "m296": {
+      "type": "lambertian",
+      "albedo": [
+        0.055,
+        0.073,
+        0.087
+      ]
+    },
+    "m297": {
+      "type": "lambertian",
+      "albedo": [
+        0.002,
+        0.719,
+        0.335
+      ]
+    },
+    "m298": {
+      "type": "lambertian",
+      "albedo": [
+        0.143,
+        0.292,
+        0.747
+      ]
+    },
+    "m299": {
+      "type": "lambertian",
+      "albedo": [
+        0.196,
+        0.017,
+        0.149
+      ]
+    },
+    "m302": {
+      "type": "metal",
+      "albedo": [
+        0.805,
+        0.649,
+        0.786
+      ],
+      "roughness": 0.381
+    },
+    "m303": {
+      "type": "lambertian",
+      "albedo": [
+        0.304,
+        0.005,
+        0.304
+      ]
+    },
+    "m304": {
+      "type": "lambertian",
+      "albedo": [
+        0.242,
+        0.299,
+        0.045
+      ]
+    },
+    "m305": {
+      "type": "lambertian",
+      "albedo": [
+        0.097,
+        0.024,
+        0.134
+      ]
+    },
+    "m306": {
+      "type": "lambertian",
+      "albedo": [
+        0.065,
+        0.302,
+        0.033
+      ]
+    },
+    "m307": {
+      "type": "lambertian",
+      "albedo": [
+        0.393,
+        0.087,
+        0.715
+      ]
+    },
+    "m308": {
+      "type": "lambertian",
+      "albedo": [
+        0.164,
+        0.436,
+        0.106
+      ]
+    },
+    "m309": {
+      "type": "lambertian",
+      "albedo": [
+        0.009,
+        0.064,
+        0.301
+      ]
+    },
+    "m310": {
+      "type": "metal",
+      "albedo": [
+        0.781,
+        0.959,
+        0.935
+      ],
+      "roughness": 0.067
+    },
+    "m311": {
+      "type": "lambertian",
+      "albedo": [
+        0.562,
+        0.046,
+        0.699
+      ]
+    },
+    "m312": {
+      "type": "lambertian",
+      "albedo": [
+        0.055,
+        0.091,
+        0.625
+      ]
+    },
+    "m313": {
+      "type": "lambertian",
+      "albedo": [
+        0.487,
+        0.002,
+        0.088
+      ]
+    },
+    "m314": {
+      "type": "lambertian",
+      "albedo": [
+        0.262,
+        0.126,
+        0.371
+      ]
+    },
+    "m315": {
+      "type": "metal",
+      "albedo": [
+        0.671,
+        0.575,
+        0.751
+      ],
+      "roughness": 0.349
+    },
+    "m316": {
+      "type": "metal",
+      "albedo": [
+        0.909,
+        0.84,
+        0.696
+      ],
+      "roughness": 0.19
+    },
+    "m317": {
+      "type": "lambertian",
+      "albedo": [
+        0.533,
+        0.025,
+        0.193
+      ]
+    },
+    "m318": {
+      "type": "lambertian",
+      "albedo": [
+        0.169,
+        0.224,
+        0.002
+      ]
+    },
+    "m319": {
+      "type": "lambertian",
+      "albedo": [
+        0.453,
+        0.007,
+        0.183
+      ]
+    },
+    "m320": {
+      "type": "lambertian",
+      "albedo": [
+        0.3,
+        0.949,
+        0.019
+      ]
+    },
+    "m321": {
+      "type": "metal",
+      "albedo": [
+        0.817,
+        0.817,
+        0.681
+      ],
+      "roughness": 0.113
+    },
+    "m322": {
+      "type": "metal",
+      "albedo": [
+        0.841,
+        0.652,
+        0.882
+      ],
+      "roughness": 0.296
+    },
+    "m323": {
+      "type": "lambertian",
+      "albedo": [
+        0.224,
+        0.02,
+        0.319
+      ]
+    },
+    "m324": {
+      "type": "lambertian",
+      "albedo": [
+        0.082,
+        0.001,
+        0.395
+      ]
+    },
+    "m325": {
+      "type": "lambertian",
+      "albedo": [
+        0.011,
+        0.093,
+        0.401
+      ]
+    },
+    "m327": {
+      "type": "lambertian",
+      "albedo": [
+        0.573,
+        0.276,
+        0.372
+      ]
+    },
+    "m328": {
+      "type": "lambertian",
+      "albedo": [
+        0.071,
+        0.004,
+        0.189
+      ]
+    },
+    "m329": {
+      "type": "lambertian",
+      "albedo": [
+        0.521,
+        0.127,
+        0.707
+      ]
+    },
+    "m330": {
+      "type": "lambertian",
+      "albedo": [
+        0.299,
+        0.026,
+        0.47
+      ]
+    },
+    "m331": {
+      "type": "lambertian",
+      "albedo": [
+        0.245,
+        0.263,
+        0.229
+      ]
+    },
+    "m332": {
+      "type": "lambertian",
+      "albedo": [
+        0.21,
+        0.296,
+        0.119
+      ]
+    },
+    "m333": {
+      "type": "lambertian",
+      "albedo": [
+        0.055,
+        0.445,
+        0.031
+      ]
+    },
+    "m334": {
+      "type": "lambertian",
+      "albedo": [
+        0.395,
+        0.245,
+        0.183
+      ]
+    },
+    "m335": {
+      "type": "metal",
+      "albedo": [
+        0.886,
+        0.989,
+        0.727
+      ],
+      "roughness": 0.111
+    },
+    "m336": {
+      "type": "lambertian",
+      "albedo": [
+        0.004,
+        0.507,
+        0.359
+      ]
+    },
+    "m337": {
+      "type": "lambertian",
+      "albedo": [
+        0.004,
+        0.03,
+        0.101
+      ]
+    },
+    "m339": {
+      "type": "lambertian",
+      "albedo": [
+        0.005,
+        0.189,
+        0.49
+      ]
+    },
+    "m340": {
+      "type": "lambertian",
+      "albedo": [
+        0.149,
+        0.097,
+        0.048
+      ]
+    },
+    "m341": {
+      "type": "lambertian",
+      "albedo": [
+        0.034,
+        0.377,
+        0.593
+      ]
+    },
+    "m342": {
+      "type": "lambertian",
+      "albedo": [
+        0.1,
+        0.154,
+        0.192
+      ]
+    },
+    "m344": {
+      "type": "lambertian",
+      "albedo": [
+        0.201,
+        0.233,
+        0.161
+      ]
+    },
+    "m345": {
+      "type": "metal",
+      "albedo": [
+        0.799,
+        0.727,
+        0.79
+      ],
+      "roughness": 0.353
+    },
+    "m346": {
+      "type": "lambertian",
+      "albedo": [
+        0.673,
+        0.157,
+        0.296
+      ]
+    },
+    "m347": {
+      "type": "lambertian",
+      "albedo": [
+        0.009,
+        0.111,
+        0.016
+      ]
+    },
+    "m348": {
+      "type": "lambertian",
+      "albedo": [
+        0.658,
+        0.864,
+        0.008
+      ]
+    },
+    "m349": {
+      "type": "metal",
+      "albedo": [
+        0.752,
+        0.616,
+        0.715
+      ],
+      "roughness": 0.042
+    },
+    "m350": {
+      "type": "lambertian",
+      "albedo": [
+        0.106,
+        0.066,
+        0.077
+      ]
+    },
+    "m351": {
+      "type": "lambertian",
+      "albedo": [
+        0.056,
+        0.175,
+        0.321
+      ]
+    },
+    "m352": {
+      "type": "lambertian",
+      "albedo": [
+        0.2,
+        0.047,
+        0.003
+      ]
+    },
+    "m353": {
+      "type": "lambertian",
+      "albedo": [
+        0.004,
+        0.449,
+        0.299
+      ]
+    },
+    "m354": {
+      "type": "lambertian",
+      "albedo": [
+        0.287,
+        0.133,
+        0.377
+      ]
+    },
+    "m355": {
+      "type": "lambertian",
+      "albedo": [
+        0.005,
+        0.563,
+        0.156
+      ]
+    },
+    "m356": {
+      "type": "lambertian",
+      "albedo": [
+        0.098,
+        0.712,
+        0.034
+      ]
+    },
+    "m357": {
+      "type": "lambertian",
+      "albedo": [
+        0.307,
+        0.001,
+        0.435
+      ]
+    },
+    "m358": {
+      "type": "lambertian",
+      "albedo": [
+        0.468,
+        0.27,
+        0.207
+      ]
+    },
+    "m359": {
+      "type": "lambertian",
+      "albedo": [
+        0.342,
+        0.137,
+        0.241
+      ]
+    },
+    "m360": {
+      "type": "lambertian",
+      "albedo": [
+        0.105,
+        0.132,
+        0.277
+      ]
+    },
+    "m361": {
+      "type": "lambertian",
+      "albedo": [
+        0.142,
+        0.295,
+        0.74
+      ]
+    },
+    "m362": {
+      "type": "metal",
+      "albedo": [
+        0.916,
+        0.909,
+        0.562
+      ],
+      "roughness": 0.062
+    },
+    "m363": {
+      "type": "lambertian",
+      "albedo": [
+        0.419,
+        0.04,
+        0.394
+      ]
+    },
+    "m364": {
+      "type": "lambertian",
+      "albedo": [
+        0.606,
+        0.102,
+        0.191
+      ]
+    },
+    "m365": {
+      "type": "lambertian",
+      "albedo": [
+        0.007,
+        0.115,
+        0.01
+      ]
+    },
+    "m366": {
+      "type": "lambertian",
+      "albedo": [
+        0.202,
+        0.058,
+        0.173
+      ]
+    },
+    "m367": {
+      "type": "lambertian",
+      "albedo": [
+        0.016,
+        0.162,
+        0.21
+      ]
+    },
+    "m368": {
+      "type": "lambertian",
+      "albedo": [
+        0.136,
+        0.535,
+        0.186
+      ]
+    },
+    "m369": {
+      "type": "lambertian",
+      "albedo": [
+        0.023,
+        0.287,
+        0.261
+      ]
+    },
+    "m370": {
+      "type": "metal",
+      "albedo": [
+        0.796,
+        0.731,
+        0.731
+      ],
+      "roughness": 0.336
+    },
+    "m371": {
+      "type": "lambertian",
+      "albedo": [
+        0.216,
+        0.422,
+        0.496
+      ]
+    },
+    "m372": {
+      "type": "lambertian",
+      "albedo": [
+        0.426,
+        0.091,
+        0.017
+      ]
+    },
+    "m373": {
+      "type": "metal",
+      "albedo": [
+        0.877,
+        0.782,
+        0.528
+      ],
+      "roughness": 0.272
+    },
+    "m374": {
+      "type": "lambertian",
+      "albedo": [
+        0.289,
+        0.583,
+        0.712
+      ]
+    },
+    "m375": {
+      "type": "lambertian",
+      "albedo": [
+        0.006,
+        0.072,
+        0.08
+      ]
+    },
+    "m376": {
+      "type": "metal",
+      "albedo": [
+        0.71,
+        0.526,
+        0.652
+      ],
+      "roughness": 0.347
+    },
+    "m377": {
+      "type": "metal",
+      "albedo": [
+        0.601,
+        0.526,
+        0.768
+      ],
+      "roughness": 0.15
+    },
+    "m378": {
+      "type": "lambertian",
+      "albedo": [
+        0.293,
+        0.184,
+        0.028
+      ]
+    },
+    "m379": {
+      "type": "lambertian",
+      "albedo": [
+        0.183,
+        0.218,
+        0.207
+      ]
+    },
+    "m380": {
+      "type": "metal",
+      "albedo": [
+        0.967,
+        0.722,
+        0.939
+      ],
+      "roughness": 0.023
+    },
+    "m381": {
+      "type": "lambertian",
+      "albedo": [
+        0.062,
+        0.107,
+        0.518
+      ]
+    },
+    "m382": {
+      "type": "metal",
+      "albedo": [
+        0.837,
+        0.647,
+        0.606
+      ],
+      "roughness": 0.335
+    },
+    "m383": {
+      "type": "lambertian",
+      "albedo": [
+        0.01,
+        0.746,
+        0.273
+      ]
+    },
+    "m384": {
+      "type": "lambertian",
+      "albedo": [
+        0.009,
+        0.029,
+        0.246
+      ]
+    },
+    "m385": {
+      "type": "lambertian",
+      "albedo": [
+        0.086,
+        0.296,
+        0.128
+      ]
+    },
+    "m386": {
+      "type": "metal",
+      "albedo": [
+        0.516,
+        0.69,
+        0.82
+      ],
+      "roughness": 0.089
+    },
+    "m387": {
+      "type": "lambertian",
+      "albedo": [
+        0.313,
+        0.078,
+        0.101
+      ]
+    },
+    "m389": {
+      "type": "lambertian",
+      "albedo": [
+        0.373,
+        0.086,
+        0.419
+      ]
+    },
+    "m390": {
+      "type": "lambertian",
+      "albedo": [
+        0.038,
+        0.755,
+        0.21
+      ]
+    },
+    "m391": {
+      "type": "lambertian",
+      "albedo": [
+        0.325,
+        0.033,
+        0.15
+      ]
+    },
+    "m392": {
+      "type": "lambertian",
+      "albedo": [
+        0.235,
+        0.039,
+        0.053
+      ]
+    },
+    "m393": {
+      "type": "metal",
+      "albedo": [
+        0.517,
+        0.757,
+        0.549
+      ],
+      "roughness": 0.259
+    },
+    "m394": {
+      "type": "lambertian",
+      "albedo": [
+        0.248,
+        0.028,
+        0.312
+      ]
+    },
+    "m395": {
+      "type": "metal",
+      "albedo": [
+        0.575,
+        0.547,
+        0.94
+      ],
+      "roughness": 0.047
+    },
+    "m396": {
+      "type": "lambertian",
+      "albedo": [
+        0.077,
+        0.271,
+        0.073
+      ]
+    },
+    "m397": {
+      "type": "lambertian",
+      "albedo": [
+        0.209,
+        0.447,
+        0.014
+      ]
+    },
+    "m398": {
+      "type": "lambertian",
+      "albedo": [
+        0.158,
+        0.115,
+        0.008
+      ]
+    },
+    "m399": {
+      "type": "lambertian",
+      "albedo": [
+        0.075,
+        0.135,
+        0.467
+      ]
+    },
+    "m400": {
+      "type": "lambertian",
+      "albedo": [
+        0.589,
+        0.025,
+        0.564
+      ]
+    },
+    "m401": {
+      "type": "lambertian",
+      "albedo": [
+        0.01,
+        0.387,
+        0.036
+      ]
+    },
+    "m402": {
+      "type": "lambertian",
+      "albedo": [
+        0.052,
+        0.028,
+        0.073
+      ]
+    },
+    "m404": {
+      "type": "lambertian",
+      "albedo": [
+        0.682,
+        0.127,
+        0.529
+      ]
+    },
+    "m405": {
+      "type": "metal",
+      "albedo": [
+        0.675,
+        0.581,
+        0.983
+      ],
+      "roughness": 0.269
+    },
+    "m406": {
+      "type": "lambertian",
+      "albedo": [
+        0.848,
+        0.62,
+        0.474
+      ]
+    },
+    "m407": {
+      "type": "lambertian",
+      "albedo": [
+        0.26,
+        0.511,
+        0.11
+      ]
+    },
+    "m409": {
+      "type": "metal",
+      "albedo": [
+        0.729,
+        0.618,
+        0.746
+      ],
+      "roughness": 0.363
+    },
+    "m410": {
+      "type": "lambertian",
+      "albedo": [
+        0.622,
+        0.643,
+        0.335
+      ]
+    },
+    "m411": {
+      "type": "lambertian",
+      "albedo": [
+        0.202,
+        0.663,
+        0.002
+      ]
+    },
+    "m412": {
+      "type": "lambertian",
+      "albedo": [
+        0.253,
+        0.153,
+        0.076
+      ]
+    },
+    "m413": {
+      "type": "metal",
+      "albedo": [
+        0.544,
+        0.636,
+        0.851
+      ],
+      "roughness": 0.177
+    },
+    "m414": {
+      "type": "lambertian",
+      "albedo": [
+        0.028,
+        0.152,
+        0.26
+      ]
+    },
+    "m415": {
+      "type": "lambertian",
+      "albedo": [
+        0.545,
+        0.197,
+        0.484
+      ]
+    },
+    "m417": {
+      "type": "lambertian",
+      "albedo": [
+        0.166,
+        0.368,
+        0.088
+      ]
+    },
+    "m418": {
+      "type": "lambertian",
+      "albedo": [
+        0.194,
+        0.83,
+        0.051
+      ]
+    },
+    "m419": {
+      "type": "lambertian",
+      "albedo": [
+        0.239,
+        0.238,
+        0.353
+      ]
+    },
+    "m420": {
+      "type": "metal",
+      "albedo": [
+        0.988,
+        0.528,
+        0.917
+      ],
+      "roughness": 0.273
+    },
+    "m421": {
+      "type": "lambertian",
+      "albedo": [
+        0.649,
+        0.026,
+        0.045
+      ]
+    },
+    "m423": {
+      "type": "lambertian",
+      "albedo": [
+        0.293,
+        0.18,
+        0.222
+      ]
+    },
+    "m424": {
+      "type": "lambertian",
+      "albedo": [
+        0.522,
+        0.257,
+        0.683
+      ]
+    },
+    "m425": {
+      "type": "lambertian",
+      "albedo": [
+        0.475,
+        0.276,
+        0.072
+      ]
+    },
+    "m426": {
+      "type": "metal",
+      "albedo": [
+        0.585,
+        0.656,
+        0.527
+      ],
+      "roughness": 0.119
+    },
+    "m427": {
+      "type": "lambertian",
+      "albedo": [
+        0.058,
+        0.186,
+        0.141
+      ]
+    },
+    "m428": {
+      "type": "lambertian",
+      "albedo": [
+        0.371,
+        0.054,
+        0.409
+      ]
+    },
+    "m429": {
+      "type": "metal",
+      "albedo": [
+        0.657,
+        0.576,
+        0.879
+      ],
+      "roughness": 0.188
+    },
+    "m430": {
+      "type": "lambertian",
+      "albedo": [
+        0.1,
+        0.486,
+        0.182
+      ]
+    },
+    "m431": {
+      "type": "lambertian",
+      "albedo": [
+        0.468,
+        0.332,
+        0.065
+      ]
+    },
+    "m432": {
+      "type": "lambertian",
+      "albedo": [
+        0.28,
+        0.09,
+        0.198
+      ]
+    },
+    "m434": {
+      "type": "metal",
+      "albedo": [
+        0.871,
+        0.671,
+        0.696
+      ],
+      "roughness": 0.322
+    },
+    "m435": {
+      "type": "lambertian",
+      "albedo": [
+        0.277,
+        0.603,
+        0.045
+      ]
+    },
+    "m436": {
+      "type": "lambertian",
+      "albedo": [
+        0.569,
+        0.233,
+        0.157
+      ]
+    },
+    "m437": {
+      "type": "metal",
+      "albedo": [
+        0.576,
+        0.836,
+        0.877
+      ],
+      "roughness": 0.2
+    },
+    "m438": {
+      "type": "metal",
+      "albedo": [
+        0.91,
+        0.824,
+        0.939
+      ],
+      "roughness": 0.053
+    },
+    "m439": {
+      "type": "lambertian",
+      "albedo": [
+        0.019,
+        0.497,
+        0.058
+      ]
+    },
+    "m440": {
+      "type": "lambertian",
+      "albedo": [
+        0.782,
+        0.252,
+        0.061
+      ]
+    },
+    "m441": {
+      "type": "lambertian",
+      "albedo": [
+        0.038,
+        0.026,
+        0.448
+      ]
+    },
+    "m442": {
+      "type": "lambertian",
+      "albedo": [
+        0.141,
+        0.113,
+        0.124
+      ]
+    },
+    "m443": {
+      "type": "metal",
+      "albedo": [
+        0.904,
+        0.769,
+        0.515
+      ],
+      "roughness": 0.311
+    },
+    "m444": {
+      "type": "lambertian",
+      "albedo": [
+        0.04,
+        0.424,
+        0.205
+      ]
+    },
+    "m445": {
+      "type": "lambertian",
+      "albedo": [
+        0.801,
+        0.317,
+        0.07
+      ]
+    },
+    "m446": {
+      "type": "lambertian",
+      "albedo": [
+        0.484,
+        0.155,
+        0.077
+      ]
+    },
+    "m447": {
+      "type": "lambertian",
+      "albedo": [
+        0.226,
+        0.139,
+        0.052
+      ]
+    },
+    "m448": {
+      "type": "lambertian",
+      "albedo": [
+        0.709,
+        0.665,
+        0.045
+      ]
+    },
+    "m449": {
+      "type": "lambertian",
+      "albedo": [
+        0.455,
+        0.094,
+        0.103
+      ]
+    },
+    "m451": {
+      "type": "lambertian",
+      "albedo": [
+        0.366,
+        0.011,
+        0.12
+      ]
+    },
+    "m452": {
+      "type": "lambertian",
+      "albedo": [
+        0.378,
+        0.105,
+        0.061
+      ]
+    },
+    "m453": {
+      "type": "lambertian",
+      "albedo": [
+        0.019,
+        0.671,
+        0.428
+      ]
+    },
+    "m454": {
+      "type": "lambertian",
+      "albedo": [
+        0.113,
+        0.003,
+        0.222
+      ]
+    },
+    "m455": {
+      "type": "lambertian",
+      "albedo": [
+        0.02,
+        0.475,
+        0.023
+      ]
+    },
+    "m456": {
+      "type": "lambertian",
+      "albedo": [
+        0.132,
+        0.22,
+        0.04
+      ]
+    },
+    "m457": {
+      "type": "lambertian",
+      "albedo": [
+        0.267,
+        0.45,
+        0.03
+      ]
+    },
+    "m458": {
+      "type": "lambertian",
+      "albedo": [
+        0.269,
+        0.171,
+        0.45
+      ]
+    },
+    "m459": {
+      "type": "lambertian",
+      "albedo": [
+        0.038,
+        0.235,
+        0.09
+      ]
+    },
+    "m460": {
+      "type": "metal",
+      "albedo": [
+        0.871,
+        0.519,
+        0.547
+      ],
+      "roughness": 0.39
+    },
+    "m461": {
+      "type": "metal",
+      "albedo": [
+        0.62,
+        0.965,
+        0.61
+      ],
+      "roughness": 0.269
+    },
+    "m463": {
+      "type": "lambertian",
+      "albedo": [
+        0.079,
+        0.691,
+        0.151
+      ]
+    },
+    "m464": {
+      "type": "lambertian",
+      "albedo": [
+        0.7,
+        0.002,
+        0.473
+      ]
+    },
+    "m465": {
+      "type": "metal",
+      "albedo": [
+        0.797,
+        0.9,
+        0.539
+      ],
+      "roughness": 0.022
+    },
+    "m466": {
+      "type": "lambertian",
+      "albedo": [
+        0.006,
+        0.02,
+        0.372
+      ]
+    },
+    "m467": {
+      "type": "lambertian",
+      "albedo": [
+        0.047,
+        0.533,
+        0.033
+      ]
+    },
+    "m468": {
+      "type": "lambertian",
+      "albedo": [
+        0.037,
+        0.231,
+        0.09
+      ]
+    },
+    "m470": {
+      "type": "lambertian",
+      "albedo": [
+        0.311,
+        0.186,
+        0.396
+      ]
+    },
+    "m471": {
+      "type": "metal",
+      "albedo": [
+        0.956,
+        0.919,
+        0.858
+      ],
+      "roughness": 0.012
+    },
+    "m472": {
+      "type": "lambertian",
+      "albedo": [
+        0.158,
+        0.416,
+        0.178
+      ]
+    },
+    "m473": {
+      "type": "lambertian",
+      "albedo": [
+        0.042,
+        0.642,
+        0.711
+      ]
+    },
+    "m474": {
+      "type": "metal",
+      "albedo": [
+        0.637,
+        0.625,
+        0.706
+      ],
+      "roughness": 0.008
+    },
+    "m475": {
+      "type": "lambertian",
+      "albedo": [
+        0.253,
+        0.69,
+        0.423
+      ]
+    }
+  },
+  "objects": [
+    {
+      "type": "plane",
+      "name": "ground",
+      "point": [
+        0,
+        0,
+        0
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "material": "ground"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 1",
+      "center": [
+        -10.8642,
+        0.2,
+        -10.4142
+      ],
+      "radius": 0.2,
+      "material": "m0"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 2",
+      "center": [
+        -10.9371,
+        0.2,
+        -9.9184
+      ],
+      "radius": 0.2,
+      "material": "m1"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 3",
+      "center": [
+        -10.643,
+        0.2,
+        -8.1214
+      ],
+      "radius": 0.2,
+      "material": "m2"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 4",
+      "center": [
+        -10.8373,
+        0.2,
+        -7.4766
+      ],
+      "radius": 0.2,
+      "material": "m3"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 5",
+      "center": [
+        -10.8146,
+        0.2,
+        -6.3876
+      ],
+      "radius": 0.2,
+      "material": "m4"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 6",
+      "center": [
+        -10.7803,
+        0.2,
+        -5.483
+      ],
+      "radius": 0.2,
+      "material": "m5"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 7",
+      "center": [
+        -10.3186,
+        0.2,
+        -4.8632
+      ],
+      "radius": 0.2,
+      "material": "m6"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 8",
+      "center": [
+        -10.3742,
+        0.2,
+        -3.4651
+      ],
+      "radius": 0.2,
+      "material": "m7"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 9",
+      "center": [
+        -10.3687,
+        0.2,
+        -2.4176
+      ],
+      "radius": 0.2,
+      "material": "m8"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 10",
+      "center": [
+        -10.8488,
+        0.2,
+        -1.8946
+      ],
+      "radius": 0.2,
+      "material": "m9"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 11",
+      "center": [
+        -10.5957,
+        0.2,
+        -0.5055
+      ],
+      "radius": 0.2,
+      "material": "m10"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 12",
+      "center": [
+        -10.138,
+        0.2,
+        0.1358
+      ],
+      "radius": 0.2,
+      "material": "m11"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 13",
+      "center": [
+        -10.7635,
+        0.2,
+        1.0037
+      ],
+      "radius": 0.2,
+      "material": "m12"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 14",
+      "center": [
+        -10.3914,
+        0.2,
+        2.0486
+      ],
+      "radius": 0.2,
+      "material": "m13"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 15",
+      "center": [
+        -10.4291,
+        0.2,
+        3.056
+      ],
+      "radius": 0.2,
+      "material": "m14"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 16",
+      "center": [
+        -10.9087,
+        0.2,
+        4.3272
+      ],
+      "radius": 0.2,
+      "material": "m15"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 17",
+      "center": [
+        -10.8894,
+        0.2,
+        5.764
+      ],
+      "radius": 0.2,
+      "material": "m16"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 18",
+      "center": [
+        -10.254,
+        0.2,
+        6.1453
+      ],
+      "radius": 0.2,
+      "material": "m17"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 19",
+      "center": [
+        -10.1193,
+        0.2,
+        7.777
+      ],
+      "radius": 0.2,
+      "material": "m18"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 20",
+      "center": [
+        -10.7033,
+        0.2,
+        8.2007
+      ],
+      "radius": 0.2,
+      "material": "m19"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 21",
+      "center": [
+        -10.3341,
+        0.2,
+        9.2041
+      ],
+      "radius": 0.2,
+      "material": "m20"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 22",
+      "center": [
+        -10.7667,
+        0.2,
+        10.6233
+      ],
+      "radius": 0.2,
+      "material": "m21"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 23",
+      "center": [
+        -9.7958,
+        0.2,
+        -10.823
+      ],
+      "radius": 0.2,
+      "material": "m22"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 24",
+      "center": [
+        -9.9237,
+        0.2,
+        -9.4055
+      ],
+      "radius": 0.2,
+      "material": "m23"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 25",
+      "center": [
+        -9.2898,
+        0.2,
+        -8.7007
+      ],
+      "radius": 0.2,
+      "material": "m24"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 26",
+      "center": [
+        -9.8857,
+        0.2,
+        -7.864
+      ],
+      "radius": 0.2,
+      "material": "m25"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 27",
+      "center": [
+        -9.5062,
+        0.2,
+        -6.8821
+      ],
+      "radius": 0.2,
+      "material": "m26"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 28",
+      "center": [
+        -9.2565,
+        0.2,
+        -5.8101
+      ],
+      "radius": 0.2,
+      "material": "m27"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 29",
+      "center": [
+        -9.6229,
+        0.2,
+        -4.882
+      ],
+      "radius": 0.2,
+      "material": "m28"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 30",
+      "center": [
+        -9.5485,
+        0.2,
+        -3.5214
+      ],
+      "radius": 0.2,
+      "material": "m29"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 31",
+      "center": [
+        -9.2807,
+        0.2,
+        -2.8449
+      ],
+      "radius": 0.2,
+      "material": "m30"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 32",
+      "center": [
+        -9.9045,
+        0.2,
+        -1.4957
+      ],
+      "radius": 0.2,
+      "material": "m31"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 33",
+      "center": [
+        -9.316,
+        0.2,
+        -0.1788
+      ],
+      "radius": 0.2,
+      "material": "m32"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 34",
+      "center": [
+        -9.5698,
+        0.2,
+        0.8474
+      ],
+      "radius": 0.2,
+      "material": "m33"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 35",
+      "center": [
+        -9.8766,
+        0.2,
+        1.1095
+      ],
+      "radius": 0.2,
+      "material": "m34"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 36",
+      "center": [
+        -9.2945,
+        0.2,
+        2.8073
+      ],
+      "radius": 0.2,
+      "material": "m35"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 37",
+      "center": [
+        -9.1427,
+        0.2,
+        3.3584
+      ],
+      "radius": 0.2,
+      "material": "m36"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 38",
+      "center": [
+        -9.8238,
+        0.2,
+        4.2867
+      ],
+      "radius": 0.2,
+      "material": "m37"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 39",
+      "center": [
+        -9.539,
+        0.2,
+        5.0579
+      ],
+      "radius": 0.2,
+      "material": "m38"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 40",
+      "center": [
+        -9.7566,
+        0.2,
+        6.1166
+      ],
+      "radius": 0.2,
+      "material": "m39"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 41",
+      "center": [
+        -9.1727,
+        0.2,
+        7.5135
+      ],
+      "radius": 0.2,
+      "material": "m40"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 42",
+      "center": [
+        -9.429,
+        0.2,
+        8.7215
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 43",
+      "center": [
+        -9.2294,
+        0.2,
+        9.06
+      ],
+      "radius": 0.2,
+      "material": "m42"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 44",
+      "center": [
+        -9.5258,
+        0.2,
+        10.2146
+      ],
+      "radius": 0.2,
+      "material": "m43"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 45",
+      "center": [
+        -8.739,
+        0.2,
+        -10.5499
+      ],
+      "radius": 0.2,
+      "material": "m44"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 46",
+      "center": [
+        -8.3402,
+        0.2,
+        -9.5041
+      ],
+      "radius": 0.2,
+      "material": "m45"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 47",
+      "center": [
+        -8.2488,
+        0.2,
+        -8.6462
+      ],
+      "radius": 0.2,
+      "material": "m46"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 48",
+      "center": [
+        -8.6358,
+        0.2,
+        -7.6872
+      ],
+      "radius": 0.2,
+      "material": "m47"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 49",
+      "center": [
+        -8.2429,
+        0.2,
+        -6.2165
+      ],
+      "radius": 0.2,
+      "material": "m48"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 50",
+      "center": [
+        -8.7631,
+        0.2,
+        -5.1344
+      ],
+      "radius": 0.2,
+      "material": "m49"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 51",
+      "center": [
+        -8.6565,
+        0.2,
+        -4.5728
+      ],
+      "radius": 0.2,
+      "material": "m50"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 52",
+      "center": [
+        -8.9625,
+        0.2,
+        -3.9798
+      ],
+      "radius": 0.2,
+      "material": "m51"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 53",
+      "center": [
+        -8.2088,
+        0.2,
+        -2.6494
+      ],
+      "radius": 0.2,
+      "material": "m52"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 54",
+      "center": [
+        -8.1973,
+        0.2,
+        -1.4354
+      ],
+      "radius": 0.2,
+      "material": "m53"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 55",
+      "center": [
+        -8.2486,
+        0.2,
+        -0.2758
+      ],
+      "radius": 0.2,
+      "material": "m54"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 56",
+      "center": [
+        -8.8802,
+        0.2,
+        0.3246
+      ],
+      "radius": 0.2,
+      "material": "m55"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 57",
+      "center": [
+        -8.997,
+        0.2,
+        1.7179
+      ],
+      "radius": 0.2,
+      "material": "m56"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 58",
+      "center": [
+        -8.933,
+        0.2,
+        2.239
+      ],
+      "radius": 0.2,
+      "material": "m57"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 59",
+      "center": [
+        -8.3847,
+        0.2,
+        3.6903
+      ],
+      "radius": 0.2,
+      "material": "m58"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 60",
+      "center": [
+        -8.489,
+        0.2,
+        4.0112
+      ],
+      "radius": 0.2,
+      "material": "m59"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 61",
+      "center": [
+        -8.5818,
+        0.2,
+        5.4197
+      ],
+      "radius": 0.2,
+      "material": "m60"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 62",
+      "center": [
+        -8.2621,
+        0.2,
+        6.8713
+      ],
+      "radius": 0.2,
+      "material": "m61"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 63",
+      "center": [
+        -8.5283,
+        0.2,
+        7.8575
+      ],
+      "radius": 0.2,
+      "material": "m62"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 64",
+      "center": [
+        -8.5625,
+        0.2,
+        8.0224
+      ],
+      "radius": 0.2,
+      "material": "m63"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 65",
+      "center": [
+        -8.6904,
+        0.2,
+        9.2845
+      ],
+      "radius": 0.2,
+      "material": "m64"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 66",
+      "center": [
+        -8.1886,
+        0.2,
+        10.2608
+      ],
+      "radius": 0.2,
+      "material": "m65"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 67",
+      "center": [
+        -7.9566,
+        0.2,
+        -10.9085
+      ],
+      "radius": 0.2,
+      "material": "m66"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 68",
+      "center": [
+        -7.664,
+        0.2,
+        -9.1395
+      ],
+      "radius": 0.2,
+      "material": "m67"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 69",
+      "center": [
+        -7.9555,
+        0.2,
+        -8.3409
+      ],
+      "radius": 0.2,
+      "material": "m68"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 70",
+      "center": [
+        -7.575,
+        0.2,
+        -7.6907
+      ],
+      "radius": 0.2,
+      "material": "m69"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 71",
+      "center": [
+        -7.6451,
+        0.2,
+        -6.8494
+      ],
+      "radius": 0.2,
+      "material": "m70"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 72",
+      "center": [
+        -7.595,
+        0.2,
+        -5.8744
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 73",
+      "center": [
+        -7.9184,
+        0.2,
+        -4.6922
+      ],
+      "radius": 0.2,
+      "material": "m72"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 74",
+      "center": [
+        -7.6275,
+        0.2,
+        -3.5282
+      ],
+      "radius": 0.2,
+      "material": "m73"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 75",
+      "center": [
+        -7.4333,
+        0.2,
+        -2.2234
+      ],
+      "radius": 0.2,
+      "material": "m74"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 76",
+      "center": [
+        -7.2144,
+        0.2,
+        -1.9804
+      ],
+      "radius": 0.2,
+      "material": "m75"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 77",
+      "center": [
+        -7.9998,
+        0.2,
+        -0.6476
+      ],
+      "radius": 0.2,
+      "material": "m76"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 78",
+      "center": [
+        -7.5299,
+        0.2,
+        0.6139
+      ],
+      "radius": 0.2,
+      "material": "m77"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 79",
+      "center": [
+        -7.2959,
+        0.2,
+        1.2093
+      ],
+      "radius": 0.2,
+      "material": "m78"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 80",
+      "center": [
+        -7.8991,
+        0.2,
+        2.0633
+      ],
+      "radius": 0.2,
+      "material": "m79"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 81",
+      "center": [
+        -7.5854,
+        0.2,
+        3.863
+      ],
+      "radius": 0.2,
+      "material": "m80"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 82",
+      "center": [
+        -7.7233,
+        0.2,
+        4.0196
+      ],
+      "radius": 0.2,
+      "material": "m81"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 83",
+      "center": [
+        -7.9693,
+        0.2,
+        5.3042
+      ],
+      "radius": 0.2,
+      "material": "m82"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 84",
+      "center": [
+        -7.1271,
+        0.2,
+        6.2805
+      ],
+      "radius": 0.2,
+      "material": "m83"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 85",
+      "center": [
+        -7.8314,
+        0.2,
+        7.201
+      ],
+      "radius": 0.2,
+      "material": "m84"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 86",
+      "center": [
+        -7.8723,
+        0.2,
+        8.0467
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 87",
+      "center": [
+        -7.646,
+        0.2,
+        9.8084
+      ],
+      "radius": 0.2,
+      "material": "m86"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 88",
+      "center": [
+        -7.3283,
+        0.2,
+        10.0287
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 89",
+      "center": [
+        -6.6592,
+        0.2,
+        -10.6635
+      ],
+      "radius": 0.2,
+      "material": "m88"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 90",
+      "center": [
+        -6.1322,
+        0.2,
+        -9.8133
+      ],
+      "radius": 0.2,
+      "material": "m89"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 91",
+      "center": [
+        -6.1724,
+        0.2,
+        -8.8263
+      ],
+      "radius": 0.2,
+      "material": "m90"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 92",
+      "center": [
+        -6.9686,
+        0.2,
+        -7.9437
+      ],
+      "radius": 0.2,
+      "material": "m91"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 93",
+      "center": [
+        -6.4447,
+        0.2,
+        -6.764
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 94",
+      "center": [
+        -6.7152,
+        0.2,
+        -5.7519
+      ],
+      "radius": 0.2,
+      "material": "m93"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 95",
+      "center": [
+        -6.5723,
+        0.2,
+        -4.1389
+      ],
+      "radius": 0.2,
+      "material": "m94"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 96",
+      "center": [
+        -6.2777,
+        0.2,
+        -3.3354
+      ],
+      "radius": 0.2,
+      "material": "m95"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 97",
+      "center": [
+        -6.9289,
+        0.2,
+        -2.8224
+      ],
+      "radius": 0.2,
+      "material": "m96"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 98",
+      "center": [
+        -6.7068,
+        0.2,
+        -1.1178
+      ],
+      "radius": 0.2,
+      "material": "m97"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 99",
+      "center": [
+        -6.5977,
+        0.2,
+        -0.7892
+      ],
+      "radius": 0.2,
+      "material": "m98"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 100",
+      "center": [
+        -6.2432,
+        0.2,
+        0.2644
+      ],
+      "radius": 0.2,
+      "material": "m99"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 101",
+      "center": [
+        -6.2042,
+        0.2,
+        1.5205
+      ],
+      "radius": 0.2,
+      "material": "m100"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 102",
+      "center": [
+        -6.1081,
+        0.2,
+        2.0921
+      ],
+      "radius": 0.2,
+      "material": "m101"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 103",
+      "center": [
+        -6.8294,
+        0.2,
+        3.8757
+      ],
+      "radius": 0.2,
+      "material": "m102"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 104",
+      "center": [
+        -6.1489,
+        0.2,
+        4.0952
+      ],
+      "radius": 0.2,
+      "material": "m103"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 105",
+      "center": [
+        -6.8164,
+        0.2,
+        5.2294
+      ],
+      "radius": 0.2,
+      "material": "m104"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 106",
+      "center": [
+        -6.719,
+        0.2,
+        6.1831
+      ],
+      "radius": 0.2,
+      "material": "m105"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 107",
+      "center": [
+        -6.918,
+        0.2,
+        7.1473
+      ],
+      "radius": 0.2,
+      "material": "m106"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 108",
+      "center": [
+        -6.6785,
+        0.2,
+        8.3748
+      ],
+      "radius": 0.2,
+      "material": "m107"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 109",
+      "center": [
+        -6.1885,
+        0.2,
+        9.3814
+      ],
+      "radius": 0.2,
+      "material": "m108"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 110",
+      "center": [
+        -6.4234,
+        0.2,
+        10.8188
+      ],
+      "radius": 0.2,
+      "material": "m109"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 111",
+      "center": [
+        -5.1671,
+        0.2,
+        -10.9021
+      ],
+      "radius": 0.2,
+      "material": "m110"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 112",
+      "center": [
+        -5.5655,
+        0.2,
+        -9.952
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 113",
+      "center": [
+        -5.6509,
+        0.2,
+        -8.1862
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 114",
+      "center": [
+        -5.2579,
+        0.2,
+        -7.8558
+      ],
+      "radius": 0.2,
+      "material": "m113"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 115",
+      "center": [
+        -5.6402,
+        0.2,
+        -6.5339
+      ],
+      "radius": 0.2,
+      "material": "m114"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 116",
+      "center": [
+        -5.3183,
+        0.2,
+        -5.9657
+      ],
+      "radius": 0.2,
+      "material": "m115"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 117",
+      "center": [
+        -5.4756,
+        0.2,
+        -4.6168
+      ],
+      "radius": 0.2,
+      "material": "m116"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 118",
+      "center": [
+        -5.3128,
+        0.2,
+        -3.298
+      ],
+      "radius": 0.2,
+      "material": "m117"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 119",
+      "center": [
+        -5.6022,
+        0.2,
+        -2.5409
+      ],
+      "radius": 0.2,
+      "material": "m118"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 120",
+      "center": [
+        -5.5465,
+        0.2,
+        -1.6599
+      ],
+      "radius": 0.2,
+      "material": "m119"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 121",
+      "center": [
+        -5.1164,
+        0.2,
+        -0.5573
+      ],
+      "radius": 0.2,
+      "material": "m120"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 122",
+      "center": [
+        -5.3194,
+        0.2,
+        0.1429
+      ],
+      "radius": 0.2,
+      "material": "m121"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 123",
+      "center": [
+        -5.7634,
+        0.2,
+        1.4554
+      ],
+      "radius": 0.2,
+      "material": "m122"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 124",
+      "center": [
+        -5.8481,
+        0.2,
+        2.7064
+      ],
+      "radius": 0.2,
+      "material": "m123"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 125",
+      "center": [
+        -5.5003,
+        0.2,
+        3.522
+      ],
+      "radius": 0.2,
+      "material": "m124"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 126",
+      "center": [
+        -5.2821,
+        0.2,
+        4.2383
+      ],
+      "radius": 0.2,
+      "material": "m125"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 127",
+      "center": [
+        -5.9565,
+        0.2,
+        5.7378
+      ],
+      "radius": 0.2,
+      "material": "m126"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 128",
+      "center": [
+        -5.9696,
+        0.2,
+        6.1344
+      ],
+      "radius": 0.2,
+      "material": "m127"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 129",
+      "center": [
+        -5.9799,
+        0.2,
+        7.0024
+      ],
+      "radius": 0.2,
+      "material": "m128"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 130",
+      "center": [
+        -5.4385,
+        0.2,
+        8.4274
+      ],
+      "radius": 0.2,
+      "material": "m129"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 131",
+      "center": [
+        -5.2961,
+        0.2,
+        9.3618
+      ],
+      "radius": 0.2,
+      "material": "m130"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 132",
+      "center": [
+        -5.419,
+        0.2,
+        10.3994
+      ],
+      "radius": 0.2,
+      "material": "m131"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 133",
+      "center": [
+        -4.7861,
+        0.2,
+        -10.9475
+      ],
+      "radius": 0.2,
+      "material": "m132"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 134",
+      "center": [
+        -4.5437,
+        0.2,
+        -9.4226
+      ],
+      "radius": 0.2,
+      "material": "m133"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 135",
+      "center": [
+        -4.3561,
+        0.2,
+        -8.9943
+      ],
+      "radius": 0.2,
+      "material": "m134"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 136",
+      "center": [
+        -4.7966,
+        0.2,
+        -7.9052
+      ],
+      "radius": 0.2,
+      "material": "m135"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 137",
+      "center": [
+        -4.7606,
+        0.2,
+        -6.5016
+      ],
+      "radius": 0.2,
+      "material": "m136"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 138",
+      "center": [
+        -4.208,
+        0.2,
+        -5.9863
+      ],
+      "radius": 0.2,
+      "material": "m137"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 139",
+      "center": [
+        -4.7043,
+        0.2,
+        -4.7847
+      ],
+      "radius": 0.2,
+      "material": "m138"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 140",
+      "center": [
+        -4.5775,
+        0.2,
+        -3.2443
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 141",
+      "center": [
+        -4.2282,
+        0.2,
+        -2.6065
+      ],
+      "radius": 0.2,
+      "material": "m140"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 142",
+      "center": [
+        -4.8699,
+        0.2,
+        -1.9758
+      ],
+      "radius": 0.2,
+      "material": "m141"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 143",
+      "center": [
+        -4.9625,
+        0.2,
+        -0.3766
+      ],
+      "radius": 0.2,
+      "material": "m142"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 144",
+      "center": [
+        -4.219,
+        0.2,
+        1.823
+      ],
+      "radius": 0.2,
+      "material": "m143"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 145",
+      "center": [
+        -4.4292,
+        0.2,
+        2.7426
+      ],
+      "radius": 0.2,
+      "material": "m144"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 146",
+      "center": [
+        -4.8155,
+        0.2,
+        3.2872
+      ],
+      "radius": 0.2,
+      "material": "m145"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 147",
+      "center": [
+        -4.6688,
+        0.2,
+        4.2887
+      ],
+      "radius": 0.2,
+      "material": "m146"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 148",
+      "center": [
+        -4.3043,
+        0.2,
+        5.3121
+      ],
+      "radius": 0.2,
+      "material": "m147"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 149",
+      "center": [
+        -4.9988,
+        0.2,
+        6.1818
+      ],
+      "radius": 0.2,
+      "material": "m148"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 150",
+      "center": [
+        -4.5549,
+        0.2,
+        7.3125
+      ],
+      "radius": 0.2,
+      "material": "m149"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 151",
+      "center": [
+        -4.9011,
+        0.2,
+        8.5729
+      ],
+      "radius": 0.2,
+      "material": "m150"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 152",
+      "center": [
+        -4.6449,
+        0.2,
+        9.8014
+      ],
+      "radius": 0.2,
+      "material": "m151"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 153",
+      "center": [
+        -4.6586,
+        0.2,
+        10.7956
+      ],
+      "radius": 0.2,
+      "material": "m152"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 154",
+      "center": [
+        -3.706,
+        0.2,
+        -10.8602
+      ],
+      "radius": 0.2,
+      "material": "m153"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 155",
+      "center": [
+        -3.8865,
+        0.2,
+        -9.5842
+      ],
+      "radius": 0.2,
+      "material": "m154"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 156",
+      "center": [
+        -3.8596,
+        0.2,
+        -8.7772
+      ],
+      "radius": 0.2,
+      "material": "m155"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 157",
+      "center": [
+        -3.9084,
+        0.2,
+        -7.1339
+      ],
+      "radius": 0.2,
+      "material": "m156"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 158",
+      "center": [
+        -3.4258,
+        0.2,
+        -6.9038
+      ],
+      "radius": 0.2,
+      "material": "m157"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 159",
+      "center": [
+        -3.4309,
+        0.2,
+        -5.583
+      ],
+      "radius": 0.2,
+      "material": "m158"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 160",
+      "center": [
+        -3.3258,
+        0.2,
+        -4.621
+      ],
+      "radius": 0.2,
+      "material": "m159"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 161",
+      "center": [
+        -3.4226,
+        0.2,
+        -3.5915
+      ],
+      "radius": 0.2,
+      "material": "m160"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 162",
+      "center": [
+        -3.7749,
+        0.2,
+        -2.6188
+      ],
+      "radius": 0.2,
+      "material": "m161"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 163",
+      "center": [
+        -3.2996,
+        0.2,
+        -1.6502
+      ],
+      "radius": 0.2,
+      "material": "m162"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 164",
+      "center": [
+        -3.5327,
+        0.2,
+        -0.909
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 165",
+      "center": [
+        -3.4247,
+        0.2,
+        1.7461
+      ],
+      "radius": 0.2,
+      "material": "m164"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 166",
+      "center": [
+        -3.8898,
+        0.2,
+        2.886
+      ],
+      "radius": 0.2,
+      "material": "m165"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 167",
+      "center": [
+        -3.6233,
+        0.2,
+        3.3785
+      ],
+      "radius": 0.2,
+      "material": "m166"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 168",
+      "center": [
+        -3.803,
+        0.2,
+        4.7213
+      ],
+      "radius": 0.2,
+      "material": "m167"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 169",
+      "center": [
+        -3.4942,
+        0.2,
+        5.2034
+      ],
+      "radius": 0.2,
+      "material": "m168"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 170",
+      "center": [
+        -3.5066,
+        0.2,
+        6.1126
+      ],
+      "radius": 0.2,
+      "material": "m169"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 171",
+      "center": [
+        -3.8327,
+        0.2,
+        7.0024
+      ],
+      "radius": 0.2,
+      "material": "m170"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 172",
+      "center": [
+        -3.4067,
+        0.2,
+        8.3262
+      ],
+      "radius": 0.2,
+      "material": "m171"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 173",
+      "center": [
+        -3.2518,
+        0.2,
+        9.5698
+      ],
+      "radius": 0.2,
+      "material": "m172"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 174",
+      "center": [
+        -3.7897,
+        0.2,
+        10.6987
+      ],
+      "radius": 0.2,
+      "material": "m173"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 175",
+      "center": [
+        -2.2968,
+        0.2,
+        -10.3984
+      ],
+      "radius": 0.2,
+      "material": "m174"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 176",
+      "center": [
+        -2.6053,
+        0.2,
+        -9.2056
+      ],
+      "radius": 0.2,
+      "material": "m175"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 177",
+      "center": [
+        -2.87,
+        0.2,
+        -8.5578
+      ],
+      "radius": 0.2,
+      "material": "m176"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 178",
+      "center": [
+        -2.4012,
+        0.2,
+        -7.2435
+      ],
+      "radius": 0.2,
+      "material": "m177"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 179",
+      "center": [
+        -2.4513,
+        0.2,
+        -6.3857
+      ],
+      "radius": 0.2,
+      "material": "m178"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 180",
+      "center": [
+        -2.3536,
+        0.2,
+        -5.4372
+      ],
+      "radius": 0.2,
+      "material": "m179"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 181",
+      "center": [
+        -2.6083,
+        0.2,
+        -4.6199
+      ],
+      "radius": 0.2,
+      "material": "m180"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 182",
+      "center": [
+        -2.5442,
+        0.2,
+        -3.1225
+      ],
+      "radius": 0.2,
+      "material": "m181"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 183",
+      "center": [
+        -2.2942,
+        0.2,
+        -2.964
+      ],
+      "radius": 0.2,
+      "material": "m182"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 184",
+      "center": [
+        -2.1707,
+        0.2,
+        -1.4522
+      ],
+      "radius": 0.2,
+      "material": "m183"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 185",
+      "center": [
+        -2.4633,
+        0.2,
+        -0.3871
+      ],
+      "radius": 0.2,
+      "material": "m184"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 186",
+      "center": [
+        -2.3029,
+        0.2,
+        0.8227
+      ],
+      "radius": 0.2,
+      "material": "m185"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 187",
+      "center": [
+        -2.6204,
+        0.2,
+        1.2866
+      ],
+      "radius": 0.2,
+      "material": "m186"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 188",
+      "center": [
+        -2.2707,
+        0.2,
+        2.5178
+      ],
+      "radius": 0.2,
+      "material": "m187"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 189",
+      "center": [
+        -2.5721,
+        0.2,
+        3.3712
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 190",
+      "center": [
+        -2.4199,
+        0.2,
+        4.191
+      ],
+      "radius": 0.2,
+      "material": "m189"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 191",
+      "center": [
+        -2.2174,
+        0.2,
+        5.1161
+      ],
+      "radius": 0.2,
+      "material": "m190"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 192",
+      "center": [
+        -2.3578,
+        0.2,
+        6.7699
+      ],
+      "radius": 0.2,
+      "material": "m191"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 193",
+      "center": [
+        -2.1609,
+        0.2,
+        7.2286
+      ],
+      "radius": 0.2,
+      "material": "m192"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 194",
+      "center": [
+        -2.72,
+        0.2,
+        8.6565
+      ],
+      "radius": 0.2,
+      "material": "m193"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 195",
+      "center": [
+        -2.3908,
+        0.2,
+        9.1304
+      ],
+      "radius": 0.2,
+      "material": "m194"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 196",
+      "center": [
+        -2.1496,
+        0.2,
+        10.7062
+      ],
+      "radius": 0.2,
+      "material": "m195"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 197",
+      "center": [
+        -1.2553,
+        0.2,
+        -10.7012
+      ],
+      "radius": 0.2,
+      "material": "m196"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 198",
+      "center": [
+        -1.661,
+        0.2,
+        -9.3837
+      ],
+      "radius": 0.2,
+      "material": "m197"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 199",
+      "center": [
+        -1.7633,
+        0.2,
+        -8.6197
+      ],
+      "radius": 0.2,
+      "material": "m198"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 200",
+      "center": [
+        -1.4853,
+        0.2,
+        -7.7535
+      ],
+      "radius": 0.2,
+      "material": "m199"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 201",
+      "center": [
+        -1.9234,
+        0.2,
+        -6.5017
+      ],
+      "radius": 0.2,
+      "material": "m200"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 202",
+      "center": [
+        -1.5812,
+        0.2,
+        -5.8141
+      ],
+      "radius": 0.2,
+      "material": "m201"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 203",
+      "center": [
+        -1.7904,
+        0.2,
+        -4.4784
+      ],
+      "radius": 0.2,
+      "material": "m202"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 204",
+      "center": [
+        -1.8298,
+        0.2,
+        -3.8269
+      ],
+      "radius": 0.2,
+      "material": "m203"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 205",
+      "center": [
+        -1.9599,
+        0.2,
+        -2.1026
+      ],
+      "radius": 0.2,
+      "material": "m204"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 206",
+      "center": [
+        -1.5325,
+        0.2,
+        -1.9815
+      ],
+      "radius": 0.2,
+      "material": "m205"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 207",
+      "center": [
+        -1.6166,
+        0.2,
+        -0.1482
+      ],
+      "radius": 0.2,
+      "material": "m206"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 208",
+      "center": [
+        -1.8191,
+        0.2,
+        0.1627
+      ],
+      "radius": 0.2,
+      "material": "m207"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 209",
+      "center": [
+        -1.9422,
+        0.2,
+        1.5383
+      ],
+      "radius": 0.2,
+      "material": "m208"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 210",
+      "center": [
+        -1.4234,
+        0.2,
+        2.8608
+      ],
+      "radius": 0.2,
+      "material": "m209"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 211",
+      "center": [
+        -1.9652,
+        0.2,
+        3.2303
+      ],
+      "radius": 0.2,
+      "material": "m210"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 212",
+      "center": [
+        -1.418,
+        0.2,
+        4.8869
+      ],
+      "radius": 0.2,
+      "material": "m211"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 213",
+      "center": [
+        -1.3179,
+        0.2,
+        5.0949
+      ],
+      "radius": 0.2,
+      "material": "m212"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 214",
+      "center": [
+        -1.3901,
+        0.2,
+        6.0114
+      ],
+      "radius": 0.2,
+      "material": "m213"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 215",
+      "center": [
+        -1.2002,
+        0.2,
+        7.1258
+      ],
+      "radius": 0.2,
+      "material": "m214"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 216",
+      "center": [
+        -1.5929,
+        0.2,
+        8.3058
+      ],
+      "radius": 0.2,
+      "material": "m215"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 217",
+      "center": [
+        -1.502,
+        0.2,
+        9.1302
+      ],
+      "radius": 0.2,
+      "material": "m216"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 218",
+      "center": [
+        -1.849,
+        0.2,
+        10.4419
+      ],
+      "radius": 0.2,
+      "material": "m217"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 219",
+      "center": [
+        -0.81,
+        0.2,
+        -10.5703
+      ],
+      "radius": 0.2,
+      "material": "m218"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 220",
+      "center": [
+        -0.9122,
+        0.2,
+        -9.7395
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 221",
+      "center": [
+        -0.9483,
+        0.2,
+        -8.3462
+      ],
+      "radius": 0.2,
+      "material": "m220"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 222",
+      "center": [
+        -0.8739,
+        0.2,
+        -7.9983
+      ],
+      "radius": 0.2,
+      "material": "m221"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 223",
+      "center": [
+        -0.8757,
+        0.2,
+        -6.8379
+      ],
+      "radius": 0.2,
+      "material": "m222"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 224",
+      "center": [
+        -0.7535,
+        0.2,
+        -5.8146
+      ],
+      "radius": 0.2,
+      "material": "m223"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 225",
+      "center": [
+        -0.6327,
+        0.2,
+        -4.3505
+      ],
+      "radius": 0.2,
+      "material": "m224"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 226",
+      "center": [
+        -0.1808,
+        0.2,
+        -3.571
+      ],
+      "radius": 0.2,
+      "material": "m225"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 227",
+      "center": [
+        -0.4646,
+        0.2,
+        -2.9958
+      ],
+      "radius": 0.2,
+      "material": "m226"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 228",
+      "center": [
+        -0.7111,
+        0.2,
+        -1.3599
+      ],
+      "radius": 0.2,
+      "material": "m227"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 229",
+      "center": [
+        -0.7987,
+        0.2,
+        1.1642
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 230",
+      "center": [
+        -0.7746,
+        0.2,
+        2.7354
+      ],
+      "radius": 0.2,
+      "material": "m229"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 231",
+      "center": [
+        -0.5294,
+        0.2,
+        3.6324
+      ],
+      "radius": 0.2,
+      "material": "m230"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 232",
+      "center": [
+        -0.7483,
+        0.2,
+        4.1098
+      ],
+      "radius": 0.2,
+      "material": "m231"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 233",
+      "center": [
+        -0.8521,
+        0.2,
+        5.7434
+      ],
+      "radius": 0.2,
+      "material": "m232"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 234",
+      "center": [
+        -0.3008,
+        0.2,
+        6.3047
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 235",
+      "center": [
+        -0.6984,
+        0.2,
+        7.392
+      ],
+      "radius": 0.2,
+      "material": "m234"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 236",
+      "center": [
+        -0.1379,
+        0.2,
+        8.8409
+      ],
+      "radius": 0.2,
+      "material": "m235"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 237",
+      "center": [
+        -0.5457,
+        0.2,
+        9.0187
+      ],
+      "radius": 0.2,
+      "material": "m236"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 238",
+      "center": [
+        -0.2038,
+        0.2,
+        10.0309
+      ],
+      "radius": 0.2,
+      "material": "m237"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 239",
+      "center": [
+        0.8319,
+        0.2,
+        -10.4409
+      ],
+      "radius": 0.2,
+      "material": "m238"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 240",
+      "center": [
+        0.1083,
+        0.2,
+        -9.4651
+      ],
+      "radius": 0.2,
+      "material": "m239"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 241",
+      "center": [
+        0.1182,
+        0.2,
+        -8.7358
+      ],
+      "radius": 0.2,
+      "material": "m240"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 242",
+      "center": [
+        0.5132,
+        0.2,
+        -7.4147
+      ],
+      "radius": 0.2,
+      "material": "m241"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 243",
+      "center": [
+        0.218,
+        0.2,
+        -6.8006
+      ],
+      "radius": 0.2,
+      "material": "m242"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 244",
+      "center": [
+        0.501,
+        0.2,
+        -5.5577
+      ],
+      "radius": 0.2,
+      "material": "m243"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 245",
+      "center": [
+        0.396,
+        0.2,
+        -4.9442
+      ],
+      "radius": 0.2,
+      "material": "m244"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 246",
+      "center": [
+        0.8634,
+        0.2,
+        -3.3352
+      ],
+      "radius": 0.2,
+      "material": "m245"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 247",
+      "center": [
+        0.466,
+        0.2,
+        -2.3351
+      ],
+      "radius": 0.2,
+      "material": "m246"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 248",
+      "center": [
+        0.8232,
+        0.2,
+        -1.8855
+      ],
+      "radius": 0.2,
+      "material": "m247"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 249",
+      "center": [
+        0.4121,
+        0.2,
+        1.6508
+      ],
+      "radius": 0.2,
+      "material": "m248"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 250",
+      "center": [
+        0.4496,
+        0.2,
+        2.3996
+      ],
+      "radius": 0.2,
+      "material": "m249"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 251",
+      "center": [
+        0.0791,
+        0.2,
+        3.8281
+      ],
+      "radius": 0.2,
+      "material": "m250"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 252",
+      "center": [
+        0.0096,
+        0.2,
+        4.0427
+      ],
+      "radius": 0.2,
+      "material": "m251"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 253",
+      "center": [
+        0.8985,
+        0.2,
+        5.4657
+      ],
+      "radius": 0.2,
+      "material": "m252"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 254",
+      "center": [
+        0.6088,
+        0.2,
+        6.4727
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 255",
+      "center": [
+        0.337,
+        0.2,
+        7.3608
+      ],
+      "radius": 0.2,
+      "material": "m254"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 256",
+      "center": [
+        0.8965,
+        0.2,
+        8.309
+      ],
+      "radius": 0.2,
+      "material": "m255"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 257",
+      "center": [
+        0.0995,
+        0.2,
+        9.8051
+      ],
+      "radius": 0.2,
+      "material": "m256"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 258",
+      "center": [
+        0.4604,
+        0.2,
+        10.4544
+      ],
+      "radius": 0.2,
+      "material": "m257"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 259",
+      "center": [
+        1.0381,
+        0.2,
+        -10.6297
+      ],
+      "radius": 0.2,
+      "material": "m258"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 260",
+      "center": [
+        1.6013,
+        0.2,
+        -9.823
+      ],
+      "radius": 0.2,
+      "material": "m259"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 261",
+      "center": [
+        1.37,
+        0.2,
+        -8.8906
+      ],
+      "radius": 0.2,
+      "material": "m260"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 262",
+      "center": [
+        1.5517,
+        0.2,
+        -7.2741
+      ],
+      "radius": 0.2,
+      "material": "m261"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 263",
+      "center": [
+        1.3185,
+        0.2,
+        -6.8475
+      ],
+      "radius": 0.2,
+      "material": "m262"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 264",
+      "center": [
+        1.0492,
+        0.2,
+        -5.1985
+      ],
+      "radius": 0.2,
+      "material": "m263"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 265",
+      "center": [
+        1.7692,
+        0.2,
+        -4.7167
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 266",
+      "center": [
+        1.7343,
+        0.2,
+        -3.7267
+      ],
+      "radius": 0.2,
+      "material": "m265"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 267",
+      "center": [
+        1.3508,
+        0.2,
+        -2.3534
+      ],
+      "radius": 0.2,
+      "material": "m266"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 268",
+      "center": [
+        1.3226,
+        0.2,
+        -1.8321
+      ],
+      "radius": 0.2,
+      "material": "m267"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 269",
+      "center": [
+        1.0589,
+        0.2,
+        -0.889
+      ],
+      "radius": 0.2,
+      "material": "m268"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 270",
+      "center": [
+        1.5978,
+        0.2,
+        0.3073
+      ],
+      "radius": 0.2,
+      "material": "m269"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 271",
+      "center": [
+        1.7527,
+        0.2,
+        1.7244
+      ],
+      "radius": 0.2,
+      "material": "m270"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 272",
+      "center": [
+        1.4543,
+        0.2,
+        2.2045
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 273",
+      "center": [
+        1.1179,
+        0.2,
+        3.6358
+      ],
+      "radius": 0.2,
+      "material": "m272"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 274",
+      "center": [
+        1.7852,
+        0.2,
+        4.1105
+      ],
+      "radius": 0.2,
+      "material": "m273"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 275",
+      "center": [
+        1.2797,
+        0.2,
+        5.3509
+      ],
+      "radius": 0.2,
+      "material": "m274"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 276",
+      "center": [
+        1.3253,
+        0.2,
+        6.4503
+      ],
+      "radius": 0.2,
+      "material": "m275"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 277",
+      "center": [
+        1.363,
+        0.2,
+        7.818
+      ],
+      "radius": 0.2,
+      "material": "m276"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 278",
+      "center": [
+        1.5972,
+        0.2,
+        8.3163
+      ],
+      "radius": 0.2,
+      "material": "m277"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 279",
+      "center": [
+        1.1635,
+        0.2,
+        9.1037
+      ],
+      "radius": 0.2,
+      "material": "m278"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 280",
+      "center": [
+        1.2728,
+        0.2,
+        10.3427
+      ],
+      "radius": 0.2,
+      "material": "m279"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 281",
+      "center": [
+        2.2292,
+        0.2,
+        -10.6086
+      ],
+      "radius": 0.2,
+      "material": "m280"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 282",
+      "center": [
+        2.7687,
+        0.2,
+        -9.4534
+      ],
+      "radius": 0.2,
+      "material": "m281"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 283",
+      "center": [
+        2.0775,
+        0.2,
+        -8.3748
+      ],
+      "radius": 0.2,
+      "material": "m282"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 284",
+      "center": [
+        2.8372,
+        0.2,
+        -7.3775
+      ],
+      "radius": 0.2,
+      "material": "m283"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 285",
+      "center": [
+        2.4607,
+        0.2,
+        -6.1647
+      ],
+      "radius": 0.2,
+      "material": "m284"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 286",
+      "center": [
+        2.8725,
+        0.2,
+        -5.4262
+      ],
+      "radius": 0.2,
+      "material": "m285"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 287",
+      "center": [
+        2.1229,
+        0.2,
+        -4.3637
+      ],
+      "radius": 0.2,
+      "material": "m286"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 288",
+      "center": [
+        2.2694,
+        0.2,
+        -3.2038
+      ],
+      "radius": 0.2,
+      "material": "m287"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 289",
+      "center": [
+        2.5999,
+        0.2,
+        -2.4612
+      ],
+      "radius": 0.2,
+      "material": "m288"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 290",
+      "center": [
+        2.0543,
+        0.2,
+        -1.7472
+      ],
+      "radius": 0.2,
+      "material": "m289"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 291",
+      "center": [
+        2.1513,
+        0.2,
+        -0.9354
+      ],
+      "radius": 0.2,
+      "material": "m290"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 292",
+      "center": [
+        2.0979,
+        0.2,
+        0.44
+      ],
+      "radius": 0.2,
+      "material": "m291"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 293",
+      "center": [
+        2.8417,
+        0.2,
+        1.5873
+      ],
+      "radius": 0.2,
+      "material": "m292"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 294",
+      "center": [
+        2.1672,
+        0.2,
+        2.5743
+      ],
+      "radius": 0.2,
+      "material": "m293"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 295",
+      "center": [
+        2.1661,
+        0.2,
+        3.7428
+      ],
+      "radius": 0.2,
+      "material": "m294"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 296",
+      "center": [
+        2.5102,
+        0.2,
+        4.5654
+      ],
+      "radius": 0.2,
+      "material": "m295"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 297",
+      "center": [
+        2.2696,
+        0.2,
+        5.523
+      ],
+      "radius": 0.2,
+      "material": "m296"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 298",
+      "center": [
+        2.3956,
+        0.2,
+        6.1717
+      ],
+      "radius": 0.2,
+      "material": "m297"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 299",
+      "center": [
+        2.5955,
+        0.2,
+        7.4632
+      ],
+      "radius": 0.2,
+      "material": "m298"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 300",
+      "center": [
+        2.2662,
+        0.2,
+        8.3988
+      ],
+      "radius": 0.2,
+      "material": "m299"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 301",
+      "center": [
+        2.8178,
+        0.2,
+        9.7789
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 302",
+      "center": [
+        2.8656,
+        0.2,
+        10.5579
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 303",
+      "center": [
+        3.054,
+        0.2,
+        -10.3912
+      ],
+      "radius": 0.2,
+      "material": "m302"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 304",
+      "center": [
+        3.5826,
+        0.2,
+        -9.7306
+      ],
+      "radius": 0.2,
+      "material": "m303"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 305",
+      "center": [
+        3.5944,
+        0.2,
+        -8.6652
+      ],
+      "radius": 0.2,
+      "material": "m304"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 306",
+      "center": [
+        3.801,
+        0.2,
+        -7.5067
+      ],
+      "radius": 0.2,
+      "material": "m305"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 307",
+      "center": [
+        3.4986,
+        0.2,
+        -6.7961
+      ],
+      "radius": 0.2,
+      "material": "m306"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 308",
+      "center": [
+        3.3956,
+        0.2,
+        -5.2229
+      ],
+      "radius": 0.2,
+      "material": "m307"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 309",
+      "center": [
+        3.7472,
+        0.2,
+        -4.6472
+      ],
+      "radius": 0.2,
+      "material": "m308"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 310",
+      "center": [
+        3.2132,
+        0.2,
+        -3.6649
+      ],
+      "radius": 0.2,
+      "material": "m309"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 311",
+      "center": [
+        3.5591,
+        0.2,
+        -2.2151
+      ],
+      "radius": 0.2,
+      "material": "m310"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 312",
+      "center": [
+        3.3073,
+        0.2,
+        -1.3127
+      ],
+      "radius": 0.2,
+      "material": "m311"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 313",
+      "center": [
+        3.0392,
+        0.2,
+        -0.4566
+      ],
+      "radius": 0.2,
+      "material": "m312"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 314",
+      "center": [
+        3.1738,
+        0.2,
+        0.4021
+      ],
+      "radius": 0.2,
+      "material": "m313"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 315",
+      "center": [
+        3.4988,
+        0.2,
+        1.261
+      ],
+      "radius": 0.2,
+      "material": "m314"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 316",
+      "center": [
+        3.8539,
+        0.2,
+        2.0124
+      ],
+      "radius": 0.2,
+      "material": "m315"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 317",
+      "center": [
+        3.0319,
+        0.2,
+        3.1641
+      ],
+      "radius": 0.2,
+      "material": "m316"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 318",
+      "center": [
+        3.7606,
+        0.2,
+        4.3541
+      ],
+      "radius": 0.2,
+      "material": "m317"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 319",
+      "center": [
+        3.0393,
+        0.2,
+        5.1528
+      ],
+      "radius": 0.2,
+      "material": "m318"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 320",
+      "center": [
+        3.3004,
+        0.2,
+        6.0185
+      ],
+      "radius": 0.2,
+      "material": "m319"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 321",
+      "center": [
+        3.45,
+        0.2,
+        7.2359
+      ],
+      "radius": 0.2,
+      "material": "m320"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 322",
+      "center": [
+        3.7851,
+        0.2,
+        8.6969
+      ],
+      "radius": 0.2,
+      "material": "m321"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 323",
+      "center": [
+        3.7855,
+        0.2,
+        9.8448
+      ],
+      "radius": 0.2,
+      "material": "m322"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 324",
+      "center": [
+        3.5717,
+        0.2,
+        10.3154
+      ],
+      "radius": 0.2,
+      "material": "m323"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 325",
+      "center": [
+        4.3306,
+        0.2,
+        -10.7809
+      ],
+      "radius": 0.2,
+      "material": "m324"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 326",
+      "center": [
+        4.5119,
+        0.2,
+        -9.7278
+      ],
+      "radius": 0.2,
+      "material": "m325"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 327",
+      "center": [
+        4.3064,
+        0.2,
+        -8.1709
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 328",
+      "center": [
+        4.072,
+        0.2,
+        -7.8391
+      ],
+      "radius": 0.2,
+      "material": "m327"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 329",
+      "center": [
+        4.4361,
+        0.2,
+        -6.1908
+      ],
+      "radius": 0.2,
+      "material": "m328"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 330",
+      "center": [
+        4.3596,
+        0.2,
+        -5.8197
+      ],
+      "radius": 0.2,
+      "material": "m329"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 331",
+      "center": [
+        4.0714,
+        0.2,
+        -4.2715
+      ],
+      "radius": 0.2,
+      "material": "m330"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 332",
+      "center": [
+        4.8306,
+        0.2,
+        -3.809
+      ],
+      "radius": 0.2,
+      "material": "m331"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 333",
+      "center": [
+        4.3728,
+        0.2,
+        -2.9591
+      ],
+      "radius": 0.2,
+      "material": "m332"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 334",
+      "center": [
+        4.8328,
+        0.2,
+        -1.4923
+      ],
+      "radius": 0.2,
+      "material": "m333"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 335",
+      "center": [
+        4.5296,
+        0.2,
+        1.4995
+      ],
+      "radius": 0.2,
+      "material": "m334"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 336",
+      "center": [
+        4.6984,
+        0.2,
+        2.2783
+      ],
+      "radius": 0.2,
+      "material": "m335"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 337",
+      "center": [
+        4.8468,
+        0.2,
+        3.1187
+      ],
+      "radius": 0.2,
+      "material": "m336"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 338",
+      "center": [
+        4.6809,
+        0.2,
+        4.0809
+      ],
+      "radius": 0.2,
+      "material": "m337"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 339",
+      "center": [
+        4.329,
+        0.2,
+        5.1344
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 340",
+      "center": [
+        4.664,
+        0.2,
+        6.8293
+      ],
+      "radius": 0.2,
+      "material": "m339"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 341",
+      "center": [
+        4.3098,
+        0.2,
+        7.7205
+      ],
+      "radius": 0.2,
+      "material": "m340"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 342",
+      "center": [
+        4.3617,
+        0.2,
+        8.7777
+      ],
+      "radius": 0.2,
+      "material": "m341"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 343",
+      "center": [
+        4.2267,
+        0.2,
+        9.2361
+      ],
+      "radius": 0.2,
+      "material": "m342"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 344",
+      "center": [
+        4.1949,
+        0.2,
+        10.5126
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 345",
+      "center": [
+        5.7768,
+        0.2,
+        -10.2177
+      ],
+      "radius": 0.2,
+      "material": "m344"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 346",
+      "center": [
+        5.1454,
+        0.2,
+        -9.3855
+      ],
+      "radius": 0.2,
+      "material": "m345"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 347",
+      "center": [
+        5.7952,
+        0.2,
+        -8.6757
+      ],
+      "radius": 0.2,
+      "material": "m346"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 348",
+      "center": [
+        5.1004,
+        0.2,
+        -7.1231
+      ],
+      "radius": 0.2,
+      "material": "m347"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 349",
+      "center": [
+        5.0812,
+        0.2,
+        -6.6944
+      ],
+      "radius": 0.2,
+      "material": "m348"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 350",
+      "center": [
+        5.6205,
+        0.2,
+        -5.9659
+      ],
+      "radius": 0.2,
+      "material": "m349"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 351",
+      "center": [
+        5.8917,
+        0.2,
+        -4.7152
+      ],
+      "radius": 0.2,
+      "material": "m350"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 352",
+      "center": [
+        5.1331,
+        0.2,
+        -3.3356
+      ],
+      "radius": 0.2,
+      "material": "m351"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 353",
+      "center": [
+        5.8708,
+        0.2,
+        -2.2052
+      ],
+      "radius": 0.2,
+      "material": "m352"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 354",
+      "center": [
+        5.3673,
+        0.2,
+        -1.499
+      ],
+      "radius": 0.2,
+      "material": "m353"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 355",
+      "center": [
+        5.8841,
+        0.2,
+        -0.2133
+      ],
+      "radius": 0.2,
+      "material": "m354"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 356",
+      "center": [
+        5.369,
+        0.2,
+        0.1287
+      ],
+      "radius": 0.2,
+      "material": "m355"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 357",
+      "center": [
+        5.2167,
+        0.2,
+        1.1786
+      ],
+      "radius": 0.2,
+      "material": "m356"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 358",
+      "center": [
+        5.5816,
+        0.2,
+        2.4941
+      ],
+      "radius": 0.2,
+      "material": "m357"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 359",
+      "center": [
+        5.8953,
+        0.2,
+        3.211
+      ],
+      "radius": 0.2,
+      "material": "m358"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 360",
+      "center": [
+        5.6095,
+        0.2,
+        4.2899
+      ],
+      "radius": 0.2,
+      "material": "m359"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 361",
+      "center": [
+        5.6494,
+        0.2,
+        5.4698
+      ],
+      "radius": 0.2,
+      "material": "m360"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 362",
+      "center": [
+        5.732,
+        0.2,
+        6.2148
+      ],
+      "radius": 0.2,
+      "material": "m361"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 363",
+      "center": [
+        5.0389,
+        0.2,
+        7.3431
+      ],
+      "radius": 0.2,
+      "material": "m362"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 364",
+      "center": [
+        5.0925,
+        0.2,
+        8.321
+      ],
+      "radius": 0.2,
+      "material": "m363"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 365",
+      "center": [
+        5.4044,
+        0.2,
+        9.4305
+      ],
+      "radius": 0.2,
+      "material": "m364"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 366",
+      "center": [
+        5.3337,
+        0.2,
+        10.3061
+      ],
+      "radius": 0.2,
+      "material": "m365"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 367",
+      "center": [
+        6.2471,
+        0.2,
+        -10.7084
+      ],
+      "radius": 0.2,
+      "material": "m366"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 368",
+      "center": [
+        6.7131,
+        0.2,
+        -9.4439
+      ],
+      "radius": 0.2,
+      "material": "m367"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 369",
+      "center": [
+        6.5834,
+        0.2,
+        -8.2703
+      ],
+      "radius": 0.2,
+      "material": "m368"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 370",
+      "center": [
+        6.3351,
+        0.2,
+        -7.401
+      ],
+      "radius": 0.2,
+      "material": "m369"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 371",
+      "center": [
+        6.6813,
+        0.2,
+        -6.977
+      ],
+      "radius": 0.2,
+      "material": "m370"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 372",
+      "center": [
+        6.4262,
+        0.2,
+        -5.1987
+      ],
+      "radius": 0.2,
+      "material": "m371"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 373",
+      "center": [
+        6.0365,
+        0.2,
+        -4.3881
+      ],
+      "radius": 0.2,
+      "material": "m372"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 374",
+      "center": [
+        6.0915,
+        0.2,
+        -3.9206
+      ],
+      "radius": 0.2,
+      "material": "m373"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 375",
+      "center": [
+        6.4345,
+        0.2,
+        -2.9507
+      ],
+      "radius": 0.2,
+      "material": "m374"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 376",
+      "center": [
+        6.3009,
+        0.2,
+        -1.5336
+      ],
+      "radius": 0.2,
+      "material": "m375"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 377",
+      "center": [
+        6.5001,
+        0.2,
+        -0.5401
+      ],
+      "radius": 0.2,
+      "material": "m376"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 378",
+      "center": [
+        6.771,
+        0.2,
+        0.2314
+      ],
+      "radius": 0.2,
+      "material": "m377"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 379",
+      "center": [
+        6.4401,
+        0.2,
+        1.5254
+      ],
+      "radius": 0.2,
+      "material": "m378"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 380",
+      "center": [
+        6.4798,
+        0.2,
+        2.368
+      ],
+      "radius": 0.2,
+      "material": "m379"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 381",
+      "center": [
+        6.5329,
+        0.2,
+        3.4092
+      ],
+      "radius": 0.2,
+      "material": "m380"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 382",
+      "center": [
+        6.5753,
+        0.2,
+        4.0441
+      ],
+      "radius": 0.2,
+      "material": "m381"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 383",
+      "center": [
+        6.4484,
+        0.2,
+        5.6065
+      ],
+      "radius": 0.2,
+      "material": "m382"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 384",
+      "center": [
+        6.8261,
+        0.2,
+        6.1862
+      ],
+      "radius": 0.2,
+      "material": "m383"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 385",
+      "center": [
+        6.8153,
+        0.2,
+        7.6173
+      ],
+      "radius": 0.2,
+      "material": "m384"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 386",
+      "center": [
+        6.5239,
+        0.2,
+        8.2869
+      ],
+      "radius": 0.2,
+      "material": "m385"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 387",
+      "center": [
+        6.8821,
+        0.2,
+        9.3524
+      ],
+      "radius": 0.2,
+      "material": "m386"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 388",
+      "center": [
+        6.0842,
+        0.2,
+        10.418
+      ],
+      "radius": 0.2,
+      "material": "m387"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 389",
+      "center": [
+        7.8965,
+        0.2,
+        -10.1545
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 390",
+      "center": [
+        7.2617,
+        0.2,
+        -9.6868
+      ],
+      "radius": 0.2,
+      "material": "m389"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 391",
+      "center": [
+        7.4866,
+        0.2,
+        -8.9204
+      ],
+      "radius": 0.2,
+      "material": "m390"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 392",
+      "center": [
+        7.5389,
+        0.2,
+        -7.1294
+      ],
+      "radius": 0.2,
+      "material": "m391"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 393",
+      "center": [
+        7.6681,
+        0.2,
+        -6.839
+      ],
+      "radius": 0.2,
+      "material": "m392"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 394",
+      "center": [
+        7.536,
+        0.2,
+        -5.5847
+      ],
+      "radius": 0.2,
+      "material": "m393"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 395",
+      "center": [
+        7.5202,
+        0.2,
+        -4.6824
+      ],
+      "radius": 0.2,
+      "material": "m394"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 396",
+      "center": [
+        7.7861,
+        0.2,
+        -3.5678
+      ],
+      "radius": 0.2,
+      "material": "m395"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 397",
+      "center": [
+        7.4824,
+        0.2,
+        -2.8942
+      ],
+      "radius": 0.2,
+      "material": "m396"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 398",
+      "center": [
+        7.1831,
+        0.2,
+        -1.8856
+      ],
+      "radius": 0.2,
+      "material": "m397"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 399",
+      "center": [
+        7.7119,
+        0.2,
+        -0.4866
+      ],
+      "radius": 0.2,
+      "material": "m398"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 400",
+      "center": [
+        7.4663,
+        0.2,
+        0.2628
+      ],
+      "radius": 0.2,
+      "material": "m399"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 401",
+      "center": [
+        7.0559,
+        0.2,
+        1.2212
+      ],
+      "radius": 0.2,
+      "material": "m400"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 402",
+      "center": [
+        7.7295,
+        0.2,
+        2.4156
+      ],
+      "radius": 0.2,
+      "material": "m401"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 403",
+      "center": [
+        7.6604,
+        0.2,
+        3.6109
+      ],
+      "radius": 0.2,
+      "material": "m402"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 404",
+      "center": [
+        7.8976,
+        0.2,
+        4.7124
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 405",
+      "center": [
+        7.4476,
+        0.2,
+        5.7013
+      ],
+      "radius": 0.2,
+      "material": "m404"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 406",
+      "center": [
+        7.0831,
+        0.2,
+        6.6457
+      ],
+      "radius": 0.2,
+      "material": "m405"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 407",
+      "center": [
+        7.1214,
+        0.2,
+        7.7456
+      ],
+      "radius": 0.2,
+      "material": "m406"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 408",
+      "center": [
+        7.7427,
+        0.2,
+        8.706
+      ],
+      "radius": 0.2,
+      "material": "m407"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 409",
+      "center": [
+        7.7087,
+        0.2,
+        9.2268
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 410",
+      "center": [
+        7.2089,
+        0.2,
+        10.1782
+      ],
+      "radius": 0.2,
+      "material": "m409"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 411",
+      "center": [
+        8.6394,
+        0.2,
+        -10.6472
+      ],
+      "radius": 0.2,
+      "material": "m410"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 412",
+      "center": [
+        8.5872,
+        0.2,
+        -9.2474
+      ],
+      "radius": 0.2,
+      "material": "m411"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 413",
+      "center": [
+        8.0995,
+        0.2,
+        -8.2688
+      ],
+      "radius": 0.2,
+      "material": "m412"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 414",
+      "center": [
+        8.5573,
+        0.2,
+        -7.7371
+      ],
+      "radius": 0.2,
+      "material": "m413"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 415",
+      "center": [
+        8.7264,
+        0.2,
+        -6.8914
+      ],
+      "radius": 0.2,
+      "material": "m414"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 416",
+      "center": [
+        8.2018,
+        0.2,
+        -5.1991
+      ],
+      "radius": 0.2,
+      "material": "m415"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 417",
+      "center": [
+        8.1705,
+        0.2,
+        -4.2524
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 418",
+      "center": [
+        8.4745,
+        0.2,
+        -3.9997
+      ],
+      "radius": 0.2,
+      "material": "m417"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 419",
+      "center": [
+        8.4974,
+        0.2,
+        -2.224
+      ],
+      "radius": 0.2,
+      "material": "m418"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 420",
+      "center": [
+        8.3997,
+        0.2,
+        -1.1379
+      ],
+      "radius": 0.2,
+      "material": "m419"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 421",
+      "center": [
+        8.4483,
+        0.2,
+        -0.6726
+      ],
+      "radius": 0.2,
+      "material": "m420"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 422",
+      "center": [
+        8.403,
+        0.2,
+        0.676
+      ],
+      "radius": 0.2,
+      "material": "m421"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 423",
+      "center": [
+        8.8023,
+        0.2,
+        1.1301
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 424",
+      "center": [
+        8.5191,
+        0.2,
+        2.042
+      ],
+      "radius": 0.2,
+      "material": "m423"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 425",
+      "center": [
+        8.3786,
+        0.2,
+        3.8803
+      ],
+      "radius": 0.2,
+      "material": "m424"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 426",
+      "center": [
+        8.2497,
+        0.2,
+        4.1457
+      ],
+      "radius": 0.2,
+      "material": "m425"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 427",
+      "center": [
+        8.1459,
+        0.2,
+        5.6645
+      ],
+      "radius": 0.2,
+      "material": "m426"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 428",
+      "center": [
+        8.8702,
+        0.2,
+        6.8659
+      ],
+      "radius": 0.2,
+      "material": "m427"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 429",
+      "center": [
+        8.2342,
+        0.2,
+        7.3546
+      ],
+      "radius": 0.2,
+      "material": "m428"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 430",
+      "center": [
+        8.5734,
+        0.2,
+        8.7008
+      ],
+      "radius": 0.2,
+      "material": "m429"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 431",
+      "center": [
+        8.6035,
+        0.2,
+        9.6774
+      ],
+      "radius": 0.2,
+      "material": "m430"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 432",
+      "center": [
+        8.6942,
+        0.2,
+        10.0372
+      ],
+      "radius": 0.2,
+      "material": "m431"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 433",
+      "center": [
+        9.4937,
+        0.2,
+        -10.3216
+      ],
+      "radius": 0.2,
+      "material": "m432"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 434",
+      "center": [
+        9.5705,
+        0.2,
+        -9.3772
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 435",
+      "center": [
+        9.355,
+        0.2,
+        -8.1537
+      ],
+      "radius": 0.2,
+      "material": "m434"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 436",
+      "center": [
+        9.1672,
+        0.2,
+        -7.2155
+      ],
+      "radius": 0.2,
+      "material": "m435"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 437",
+      "center": [
+        9.3719,
+        0.2,
+        -6.5481
+      ],
+      "radius": 0.2,
+      "material": "m436"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 438",
+      "center": [
+        9.7096,
+        0.2,
+        -5.2454
+      ],
+      "radius": 0.2,
+      "material": "m437"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 439",
+      "center": [
+        9.8089,
+        0.2,
+        -4.3313
+      ],
+      "radius": 0.2,
+      "material": "m438"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 440",
+      "center": [
+        9.6334,
+        0.2,
+        -3.4489
+      ],
+      "radius": 0.2,
+      "material": "m439"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 441",
+      "center": [
+        9.0845,
+        0.2,
+        -2.3916
+      ],
+      "radius": 0.2,
+      "material": "m440"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 442",
+      "center": [
+        9.0031,
+        0.2,
+        -1.4337
+      ],
+      "radius": 0.2,
+      "material": "m441"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 443",
+      "center": [
+        9.7447,
+        0.2,
+        -0.9005
+      ],
+      "radius": 0.2,
+      "material": "m442"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 444",
+      "center": [
+        9.1881,
+        0.2,
+        0.7555
+      ],
+      "radius": 0.2,
+      "material": "m443"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 445",
+      "center": [
+        9.4542,
+        0.2,
+        1.3815
+      ],
+      "radius": 0.2,
+      "material": "m444"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 446",
+      "center": [
+        9.2037,
+        0.2,
+        2.7809
+      ],
+      "radius": 0.2,
+      "material": "m445"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 447",
+      "center": [
+        9.1204,
+        0.2,
+        3.4086
+      ],
+      "radius": 0.2,
+      "material": "m446"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 448",
+      "center": [
+        9.1748,
+        0.2,
+        4.6624
+      ],
+      "radius": 0.2,
+      "material": "m447"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 449",
+      "center": [
+        9.6311,
+        0.2,
+        5.8757
+      ],
+      "radius": 0.2,
+      "material": "m448"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 450",
+      "center": [
+        9.0117,
+        0.2,
+        6.7772
+      ],
+      "radius": 0.2,
+      "material": "m449"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 451",
+      "center": [
+        9.2752,
+        0.2,
+        7.0398
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 452",
+      "center": [
+        9.3197,
+        0.2,
+        8.8091
+      ],
+      "radius": 0.2,
+      "material": "m451"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 453",
+      "center": [
+        9.8915,
+        0.2,
+        9.8206
+      ],
+      "radius": 0.2,
+      "material": "m452"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 454",
+      "center": [
+        9.1884,
+        0.2,
+        10.2267
+      ],
+      "radius": 0.2,
+      "material": "m453"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 455",
+      "center": [
+        10.3457,
+        0.2,
+        -10.2693
+      ],
+      "radius": 0.2,
+      "material": "m454"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 456",
+      "center": [
+        10.7473,
+        0.2,
+        -9.2926
+      ],
+      "radius": 0.2,
+      "material": "m455"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 457",
+      "center": [
+        10.7968,
+        0.2,
+        -8.5639
+      ],
+      "radius": 0.2,
+      "material": "m456"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 458",
+      "center": [
+        10.1136,
+        0.2,
+        -7.8201
+      ],
+      "radius": 0.2,
+      "material": "m457"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 459",
+      "center": [
+        10.0484,
+        0.2,
+        -6.5764
+      ],
+      "radius": 0.2,
+      "material": "m458"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 460",
+      "center": [
+        10.1276,
+        0.2,
+        -5.1819
+      ],
+      "radius": 0.2,
+      "material": "m459"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 461",
+      "center": [
+        10.7414,
+        0.2,
+        -4.4295
+      ],
+      "radius": 0.2,
+      "material": "m460"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 462",
+      "center": [
+        10.0343,
+        0.2,
+        -3.9562
+      ],
+      "radius": 0.2,
+      "material": "m461"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 463",
+      "center": [
+        10.5748,
+        0.2,
+        -2.1726
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 464",
+      "center": [
+        10.1381,
+        0.2,
+        -1.9836
+      ],
+      "radius": 0.2,
+      "material": "m463"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 465",
+      "center": [
+        10.4609,
+        0.2,
+        -0.9048
+      ],
+      "radius": 0.2,
+      "material": "m464"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 466",
+      "center": [
+        10.4522,
+        0.2,
+        0.5579
+      ],
+      "radius": 0.2,
+      "material": "m465"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 467",
+      "center": [
+        10.2619,
+        0.2,
+        1.3573
+      ],
+      "radius": 0.2,
+      "material": "m466"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 468",
+      "center": [
+        10.5851,
+        0.2,
+        2.1864
+      ],
+      "radius": 0.2,
+      "material": "m467"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 469",
+      "center": [
+        10.7648,
+        0.2,
+        3.7635
+      ],
+      "radius": 0.2,
+      "material": "m468"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 470",
+      "center": [
+        10.6919,
+        0.2,
+        4.0062
+      ],
+      "radius": 0.2,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 471",
+      "center": [
+        10.1023,
+        0.2,
+        5.6232
+      ],
+      "radius": 0.2,
+      "material": "m470"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 472",
+      "center": [
+        10.6594,
+        0.2,
+        6.7169
+      ],
+      "radius": 0.2,
+      "material": "m471"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 473",
+      "center": [
+        10.765,
+        0.2,
+        7.3877
+      ],
+      "radius": 0.2,
+      "material": "m472"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 474",
+      "center": [
+        10.3136,
+        0.2,
+        8.292
+      ],
+      "radius": 0.2,
+      "material": "m473"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 475",
+      "center": [
+        10.8948,
+        0.2,
+        9.6774
+      ],
+      "radius": 0.2,
+      "material": "m474"
+    },
+    {
+      "type": "sphere",
+      "name": "sphere 476",
+      "center": [
+        10.7977,
+        0.2,
+        10.8288
+      ],
+      "radius": 0.2,
+      "material": "m475"
+    },
+    {
+      "type": "sphere",
+      "name": "big glass",
+      "center": [
+        0,
+        1,
+        0
+      ],
+      "radius": 1.0,
+      "material": "glass"
+    },
+    {
+      "type": "sphere",
+      "name": "big diffuse",
+      "center": [
+        -4,
+        1,
+        0
+      ],
+      "radius": 1.0,
+      "material": "big_diffuse"
+    },
+    {
+      "type": "sphere",
+      "name": "big metal",
+      "center": [
+        4,
+        1,
+        0
+      ],
+      "radius": 1.0,
+      "material": "big_metal"
+    }
+  ]
+}

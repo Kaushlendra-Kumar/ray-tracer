@@ -1,0 +1,97 @@
+# Builds and tests everything, then publishes the browser editor (with the
+# renderer compiled to WebAssembly) to GitHub Pages on every push to main.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  EMSCRIPTEN_VERSION: 6.0.13
+
+jobs:
+  native:
+    name: Native build, C++ and Go tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Ninja
+        run: sudo apt-get update && sudo apt-get install -y ninja-build
+      - name: Configure
+        run: cmake -S . -B build -G Ninja
+      - name: Build
+        run: cmake --build build
+      - name: C++ tests
+        run: ctest --test-dir build --output-on-failure
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+          cache-dependency-path: web/backend/go.mod
+      - name: Backend tests (end-to-end against build/rt)
+        working-directory: web/backend
+        run: go test ./...
+
+  web:
+    name: WebAssembly build and editor
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Ninja
+        run: sudo apt-get update && sudo apt-get install -y ninja-build
+      - name: Cache Emscripten SDK
+        uses: actions/cache@v4
+        with:
+          path: emsdk
+          key: emsdk-${{ env.EMSCRIPTEN_VERSION }}
+      - name: Install Emscripten
+        run: |
+          [ -d emsdk ] || git clone --depth 1 https://github.com/emscripten-core/emsdk.git
+          ./emsdk/emsdk install "$EMSCRIPTEN_VERSION"
+          ./emsdk/emsdk activate "$EMSCRIPTEN_VERSION"
+      - name: Build WebAssembly renderer
+        run: |
+          source ./emsdk/emsdk_env.sh
+          tools/build_wasm.sh
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/frontend/package-lock.json
+      - name: WebAssembly smoke test
+        run: node tools/wasm_smoke.mjs
+      - name: Install editor dependencies
+        working-directory: web/frontend
+        run: npm ci
+      - name: Editor tests
+        working-directory: web/frontend
+        run: npm test
+      - name: Build editor
+        working-directory: web/frontend
+        run: npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/frontend/dist
+
+  deploy:
+    name: Deploy to GitHub Pages
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: [native, web]
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

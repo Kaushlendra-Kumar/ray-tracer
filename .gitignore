@@ -1,0 +1,8 @@
+build*/
+web/frontend/node_modules/
+web/frontend/dist/
+*.ppm
+docs/images/*.log
+render.png
+.tools/
+web/frontend/public/wasm/

@@ -1,0 +1,22 @@
+{
+  "name": "First light",
+  "description": "Phase 2 milestone: ground plane, three diffuse spheres, one point light, hard shadows, direct lighting only.",
+  "camera": { "look_from": [0, 1.2, 4], "look_at": [0, 0.5, 0], "vfov": 45 },
+  "render": { "width": 640, "height": 360, "spp": 16, "max_depth": 4, "integrator": "direct", "tone_map": "clamp" },
+  "background": { "type": "gradient", "top": [0.35, 0.55, 0.9], "bottom": [0.9, 0.92, 1.0] },
+  "materials": {
+    "ground": { "type": "lambertian", "albedo": [0.8, 0.8, 0.8], "albedo2": [0.25, 0.25, 0.25], "checker_scale": 1.0 },
+    "red":    { "type": "lambertian", "albedo": [0.8, 0.15, 0.1] },
+    "green":  { "type": "lambertian", "albedo": [0.2, 0.7, 0.25] },
+    "blue":   { "type": "lambertian", "albedo": [0.15, 0.3, 0.85] }
+  },
+  "objects": [
+    { "type": "plane", "name": "ground", "point": [0, 0, 0], "normal": [0, 1, 0], "material": "ground" },
+    { "type": "sphere", "name": "left", "center": [-1.3, 0.5, 0], "radius": 0.5, "material": "red" },
+    { "type": "sphere", "name": "middle", "center": [0, 0.7, -0.4], "radius": 0.7, "material": "green" },
+    { "type": "sphere", "name": "right", "center": [1.3, 0.4, 0.3], "radius": 0.4, "material": "blue" }
+  ],
+  "lights": [
+    { "type": "point", "name": "key", "position": [3, 5, 3], "intensity": [40, 38, 34] }
+  ]
+}

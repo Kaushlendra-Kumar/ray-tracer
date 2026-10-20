@@ -1,0 +1,25 @@
+{
+  "name": "Hall of mirrors",
+  "description": "Two parallel mirrors facing each other produce a receding series of reflections; tests deep specular recursion and max_depth.",
+  "camera": { "look_from": [-1.2, 1.6, 2.6], "look_at": [0.6, 0.9, -0.2], "vfov": 55 },
+  "render": { "width": 720, "height": 405, "spp": 128, "max_depth": 40, "rr_min_depth": 30, "integrator": "path", "tone_map": "aces" },
+  "background": { "type": "solid", "color": [0.02, 0.02, 0.03] },
+  "materials": {
+    "floor":  { "type": "lambertian", "albedo": [0.7, 0.7, 0.7], "albedo2": [0.15, 0.15, 0.15], "checker_scale": 2.0 },
+    "mirror": { "type": "metal", "albedo": [0.92, 0.94, 0.96], "roughness": 0.0 },
+    "frame":  { "type": "lambertian", "albedo": [0.3, 0.2, 0.12] },
+    "orange": { "type": "lambertian", "albedo": [0.9, 0.45, 0.1] },
+    "teal":   { "type": "lambertian", "albedo": [0.1, 0.6, 0.6] },
+    "lamp":   { "type": "emissive", "color": [1.0, 0.92, 0.8], "intensity": 6 }
+  },
+  "objects": [
+    { "type": "plane", "name": "floor", "point": [0, 0, 0], "normal": [0, 1, 0], "material": "floor" },
+    { "type": "quad", "name": "left mirror", "corner": [-2, 0.05, -3], "u": [0, 0, 6], "v": [0, 2.4, 0], "material": "mirror" },
+    { "type": "quad", "name": "right mirror", "corner": [2, 0.05, 3], "u": [0, 0, -6], "v": [0, 2.4, 0], "material": "mirror" },
+    { "type": "box", "name": "left frame", "min": [-2.1, 2.45, -3], "max": [-1.95, 2.6, 3], "material": "frame" },
+    { "type": "box", "name": "right frame", "min": [1.95, 2.45, -3], "max": [2.1, 2.6, 3], "material": "frame" },
+    { "type": "sphere", "name": "orange ball", "center": [0.3, 0.45, -0.6], "radius": 0.45, "material": "orange" },
+    { "type": "box", "name": "teal block", "min": [-0.9, 0, 0.1], "max": [-0.3, 0.9, 0.7], "rotate_y": 30, "material": "teal" },
+    { "type": "quad", "name": "ceiling lamp", "corner": [-0.75, 3.2, -0.75], "u": [1.5, 0, 0], "v": [0, 0, 1.5], "material": "lamp" }
+  ]
+}
